@@ -3,6 +3,10 @@ header{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+.grid-container{
+    display: grid;
+    grid-template-areas: ;
+}
 
 body{
     background-color: black;
