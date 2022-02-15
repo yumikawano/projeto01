@@ -5,8 +5,10 @@
     box-sizing: border-box;
   }
 
+  /* HEADER */
+
 header{
-    display: flex;
+    display: grid;
     border: 0;
     padding: 0;
     margin: 0;
@@ -16,14 +18,14 @@ header{
 }
 
 .grid-container1{
-    display: flex;
+    display: grid;
     grid-template-columns: auto auto;
     grid-gap: 250px;
     padding: 0;
 
 }
 
-button.menu{
+.btn-menu{
     box-sizing: border-box;
     background-color: transparent;
     border: 2px solid #e74c3c;
@@ -33,7 +35,7 @@ button.menu{
     font-size: 15px;
     font-weight: 400;
     line-height: 1;
-    margin: 2px;
+    margin: 1px;
     padding: 1em 1.5em;
     text-decoration: none;
     text-align: center;
@@ -41,13 +43,13 @@ button.menu{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
-button.menu:hover{
+.btn-menu:hover{
     background-color: #fff;
     color: #000000;
     outline: 0;
 }
 
-button.menu{
+.btn-menu{
   border-color: #fff;
   color: #fff;
   background-position: 100%;
@@ -55,9 +57,11 @@ button.menu{
   transition: background 300ms ease-in-out;
 }
 
-button.menu:houver{
+.btn-menu:houver{
     background-position: 0;
 }
+
+/*LOGO*/
 
 section{
     padding: 0;
@@ -86,6 +90,8 @@ section{
 .item9{ grid-area: Treino;}
 .item10{ grid-area: Desenvolvimento;}
 
+/*SOBRE MIM*/
+
 .grid-container2{
     display: grid;
     padding: 50px;
@@ -94,10 +100,14 @@ section{
     text-align: left;
     text-align: justify;
 }
+
+/*MEU TRABALHO*/
+
 .trabalho{
     text-align: center;
     padding: 50px;
 }
+
 
 .grid-container3{
     display: grid;
@@ -115,14 +125,15 @@ section{
     text-align: left;
 }
 
-.mudar{
-    display: grid;
+.grid-container5{
+    display: flex;
     padding: 50px;
     grid-gap: 100px;
-    grid-template-columns: auto;
     text-align: center;
 
 }
+
+/*CONTATO*/
 
 .grid-container6{
     display: grid;
@@ -146,7 +157,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-button{
+.btn{
     text-align: center;
     box-sizing: border-box;
     background-color: transparent;
@@ -157,7 +168,7 @@ button{
     font-size: 15px;
     font-weight: 400;
     line-height: 1;
-    margin: 50px;
+    margin: 2px;
     padding: 1em 1.5em;
     text-decoration: none;
     text-align: center;
@@ -166,13 +177,13 @@ button{
     font-weight: 700;
 }
 
-button:hover{
+.btn:hover{
     background-color: #fff;
     color: #000000;
     outline: 0;
 }
 
-button{
+.btn{
     border-color: #fff;
     color: #fff;
     background-position: center;
@@ -180,7 +191,7 @@ button{
     transition: background 300ms ease-in-out;
 }
 
-button{
+.btn{
     background-position: center;
 }
 
@@ -215,9 +226,12 @@ p{
   
 
 }
+/*FOOTER*/
 
 footer{
     text-align: center
 }
+
+.footer{text-align: center;}
 
     
