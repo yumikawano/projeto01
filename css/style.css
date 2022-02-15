@@ -1,25 +1,189 @@
 *{
     border: none;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     box-sizing: border-box;
   }
 
 header{
-    background-color: black;   
+    display: flex;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: #000000;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-}
-.grid-container{
-    display: grid;
-    grid-template-areas: ;
 }
 
+.grid-container1{
+    display: flex;
+    grid-template-columns: auto auto;
+    grid-gap: 250px;
+    padding: 0;
+
+}
+
+button.menu{
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 2px;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+button.menu:hover{
+    background-color: #fff;
+    color: #000000;
+    outline: 0;
+}
+
+button.menu{
+  border-color: #fff;
+  color: #fff;
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+
+button.menu:houver{
+    background-position: 0;
+}
+
+section{
+    padding: 0;
+    border: 0;
+    margin: 0;
+
+}
+
+.personal{
+    padding: 50px;
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.item1{ grid-area: header button;}
+.item2{ grid-area: header button;}
+.item3{ grid-area: sobre;}
+.item4{ grid-area: img;}
+.item5{ grid-area: img img img;}
+.item6{ grid-area: img img img;}
+.item7{ grid-area: img img img;}
+.item8{ grid-area: Exercicios;}
+.item9{ grid-area: Treino;}
+.item10{ grid-area: Desenvolvimento;}
+
+.grid-container2{
+    display: grid;
+    padding: 50px;
+    grid-template-columns: auto auto;
+    grid-gap: 100px;
+    text-align: left;
+    text-align: justify;
+}
+.trabalho{
+    text-align: center;
+    padding: 50px;
+}
+
+.grid-container3{
+    display: grid;
+    padding: 50px;
+    grid-gap: 100px;
+    grid-template-columns: auto auto;
+    text-align: left;
+}
+
+.grid-container4{
+    display: grid;
+    padding: 50px;
+    grid-gap: 100px;
+    grid-template-columns: auto;
+    text-align: left;
+}
+
+.mudar{
+    display: grid;
+    padding: 50px;
+    grid-gap: 100px;
+    grid-template-columns: auto;
+    text-align: center;
+
+}
+
+.grid-container6{
+    display: grid;
+    padding: 50px;
+    grid-gap: 100px;
+    grid-template-columns: auto auto;
+    text-align: left;
+
+}
+
+
 body{
-    background-color: black;
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: auto;
+    top: auto;
+    padding: 0;
+    background: #000000;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+button{
+    text-align: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 50px;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+button:hover{
+    background-color: #fff;
+    color: #000000;
+    outline: 0;
+}
+
+button{
+    border-color: #fff;
+    color: #fff;
+    background-position: center;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+}
+
+button{
+    background-position: center;
+}
+
 
 h1{
     font-size: 72px;
@@ -28,6 +192,7 @@ h1{
 
 h2{
     font-size: 40px;
+    padding: 10px;
 }
 
 h3{
@@ -38,44 +203,21 @@ h5{
     font-size: 18px;
 }
 
+h6{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
 p{
+    padding: 5px;
     font-size: 15px;
-    text-align: justify;
+  
+
 }
 
-button{
-    box-sizing: border-box;
-  background-color: transparent;
-  border: 2px solid #e74c3c;
-  border-radius: 0.6em;
-  color: #e74c3c;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1;
-  margin: 2px;
-  padding: 1em 1.5em;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-}
-button:hover{
-    background-color: #fff;
-color: #000000;
-outline: 0;
+footer{
+    text-align: center
 }
 
-button{
-  border-color: #fff;
-  color: #fff;
-  background-position: 100%;
-  background-size: 400%;
-  transition: background 300ms ease-in-out;
-}
-
-button:houver{
-    background-position: 0;
-}
     
