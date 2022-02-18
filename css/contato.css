@@ -12,8 +12,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (min-width: 998px){
-  body{
+@media (min-width: 998px) {
+  body {
     padding-top: 10px;
   }
 }
@@ -21,39 +21,41 @@ body {
 /* HEADER */
 
 .header {
-  display: flex;
+  display: grid; 
   border: 0;
   padding: 0;
-  margin-left: 50px;
+  margin-left: 0;
   background: #000000;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.grid-container1{
-display: grid;
-padding: 20px;
-grid-gap: 300px;
-grid-template-columns: auto auto;
-text-align: left;
+/* CABEÇALHO DO SITE */
+
+.grid-container1 {
+  display: grid;
+  padding: 20px;
+  grid-gap: 300px;
+  grid-template-columns: auto auto;
+  text-align: left;
 }
 
-/* NOME DO SITE */
+/* Nome do site */
 
 .item1 {
   padding: 0;
-  margin: 0;
+  margin-left: 50px;
   border: none;
 }
 
-/* BOTÕES DO SITE */
+/* Botões do menu */
 
 .item2 {
- padding: 0;
- margin-left: 200px;
- margin-right: 50px;
- margin-bottom: 10px;
- border: none;
+  padding: 0;
+  margin-left: 200px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  border: none;
 }
 
 .btn-menu {
@@ -95,6 +97,8 @@ text-align: left;
 /*LOGO*/
 
 section {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   border: 0;
   margin: 0;
@@ -107,129 +111,44 @@ section {
   height: 700px;
 }
 
-/* TEXTO PRINCIPAL */
-
-.personal {
-  padding: 0;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
-
-.trainer1{
-  margin-top: 50px;
-}
-
-.trainer2{
-  margin-bottom: 50px;
-}
-
-/*SOBRE MIM*/
+/* CONTATO */
 
 .grid-container2 {
-  display: grid;
+  display: flex;
   padding: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+  grid-gap: 200px;
   grid-template-columns: auto auto;
-  grid-gap: 100px;
   text-align: left;
-  text-align: justify;
 }
 
-/* TITULO E SUBTITULO */
+/* FOTO */
 
-.item3{
+.item3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.sobre-mim{
-  margin-bottom: 20px;
-}
-
-.text{
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* IMAGEM */
+/* Formulário de contato */
 
 .item4 {
   grid-area: auto;
 }
 
-/*MEU TRABALHO*/
-
-.trabalho {
-  text-align: center;
-  padding: 50px;
+.sub {
+  text-align: justify;
+  margin-top: 50px;
 }
 
-.grid-container3 {
-  display: grid;
-  padding: 0;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 150px;
-  grid-gap: 25px;
-  grid-template-columns: auto auto auto;
-  text-align: left;
-}
-
-/* IMAGENS */
-
-.item5 {
-  grid-area: img img img;
-}
-.item6 {
-  grid-area: img img img;
-}
-.item7 {
-  grid-area: img img img;
-}
-
-/* TEXTO DAS IMAGENS */
-
-.item8 {
-  grid-area: Exercicios;
-}
-.item9 {
-  grid-area: Treino;
-}
-.item10 {
-  grid-area: Desenvolvimento;
-}
-
-.titulo{
-  margin-top: 20px;
+.end {
+  text-align: right;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
-.sub-titulo{
-  margin-bottom: 10px;
-}
-
-/* TEXTO E BOTÃO */
-
-.grid-container4 {
-  display: block;
-  padding: 0;
-  margin-top: 150px;
-  grid-gap: 100px;
-  text-align: center;
-}
-
-.item11{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-bottom: 150px;
-}
-
-/* BOTÕES DO CORPO */
+/* Botão enviar */
 
 .btn {
   text-align: center;
@@ -269,16 +188,11 @@ section {
   background-position: center;
 }
 
-/* LETRAS DO SITE */
-
-h1 {
-  font-size: 72px;
-  text-align: center;
-}
+/* LETRAS */
 
 h2 {
   font-size: 40px;
-  padding: 10px;
+  text-align: center;
 }
 
 h3 {
@@ -287,12 +201,8 @@ h3 {
 
 h5 {
   font-size: 18px;
-}
-
-h6 {
-  font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
+  text-align: right;
+  padding: 15px;
 }
 
 p {
@@ -300,10 +210,9 @@ p {
   font-size: 15px;
 }
 
-/*FOOTER*/
+/* RODAPÉ*/
 
 footer {
   text-align: center;
   margin-bottom: 50px;
 }
-
