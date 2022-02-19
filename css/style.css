@@ -301,9 +301,43 @@ p {
 }
 
 /*FOOTER*/
+.face{
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.twitter{
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.whatsapp{
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.instagram{
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 footer {
   text-align: center;
   margin-bottom: 50px;
 }
+
+.footer{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 
