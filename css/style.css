@@ -5,26 +5,26 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  padding-top: 10px;
+  padding-top: 0;
+  width: 400px;
+  height: 800px;
   background: #000000;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (min-width: 998px){
-  body{
-    padding-top: 10px;
-  }
-}
-
 /* HEADER */
 
-.header {
+.nav {
   display: flex;
   border: 0;
   padding: 0;
-  margin-left: 50px;
+  margin-left: 0;
   background: #000000;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -32,8 +32,8 @@ body {
 
 .grid-container1{
 display: grid;
-padding: 20px;
-grid-gap: 300px;
+padding: 0;
+grid-gap: 0;
 grid-template-columns: auto auto;
 text-align: left;
 }
@@ -42,7 +42,10 @@ text-align: left;
 
 .item1 {
   padding: 0;
-  margin: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   border: none;
 }
 
@@ -50,10 +53,23 @@ text-align: left;
 
 .item2 {
  padding: 0;
- margin-left: 200px;
- margin-right: 50px;
- margin-bottom: 10px;
+ margin-left: 15px;
+ margin-right: 15px;
  border: none;
+}
+
+.cart{
+  width: 20px;
+  height: 20px;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.login{
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0;
 }
 
 .btn-menu {
@@ -63,16 +79,18 @@ text-align: left;
   border-radius: 0.6em;
   color: #e74c3c;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 3px;
   font-weight: 400;
-  line-height: 1;
-  margin: 1px;
-  padding: 1em 1.5em;
+  line-height: 3;
+  margin: 0;
+  margin-left: 1px;
+  margin-top: 25px;
+  padding: 0;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: 300;
 }
 .btn-menu:hover {
   background-color: #fff;
@@ -94,7 +112,8 @@ text-align: left;
 
 /*LOGO*/
 
-section {
+
+.imagem {
   padding: 0;
   border: 0;
   margin: 0;
@@ -103,37 +122,37 @@ section {
 .container img {
   margin-left: 0;
   margin-right: 0;
-  width: 1515px;
-  height: 700px;
+  width: 400px;
+  height: 200px;
 }
 
 /* TEXTO PRINCIPAL */
 
 .personal {
   padding: 0;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   text-align: center;
-  font-size: 15px;
+  font-size: 8px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
 .trainer1{
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .trainer2{
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 /*SOBRE MIM*/
 
 .grid-container2 {
   display: grid;
-  padding: 50px;
+  padding: 0;
   grid-template-columns: auto auto;
-  grid-gap: 100px;
+  grid-gap: 0;
   text-align: left;
   text-align: justify;
 }
@@ -147,69 +166,112 @@ section {
 }
 
 .sobre-mim{
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.mim{
+  margin-left: 15px;
 }
 
 .text{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 /* IMAGEM */
 
-.item4 {
+img.item4 {
   grid-area: auto;
+  width: 200px;
+  height: 300px;
+  min-width: 200px;
+  min-height: 300px;
 }
 
 /*MEU TRABALHO*/
 
 .trabalho {
   text-align: center;
-  padding: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .grid-container3 {
   display: grid;
   padding: 0;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 150px;
-  grid-gap: 25px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 25px;
   grid-template-columns: auto auto auto;
   text-align: left;
 }
 
 /* IMAGENS */
 
-.item5 {
-  grid-area: img img img;
+img.item5 {
+  grid-area: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 120px;
+  height: 80px;
+  min-width: 120;
+  min-height: 80;
 }
-.item6 {
-  grid-area: img img img;
+img.item6 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 5px;
+  width: 120px;
+  height: 80px;
+  min-width: 120;
+  min-height: 80;
 }
-.item7 {
-  grid-area: img img img;
+img.item7 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 5px;
+  width: 120px;
+  height: 80px;
+  min-width: 120;
+  min-height: 80;
 }
 
 /* TEXTO DAS IMAGENS */
 
 .item8 {
-  grid-area: Exercicios;
+  grid-area: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: justify;
 }
 .item9 {
-  grid-area: Treino;
+  grid-area: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: justify;
 }
 .item10 {
-  grid-area: Desenvolvimento;
+  grid-area: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: justify;
 }
 
 .titulo{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  text-align: left;
 }
 
 .sub-titulo{
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  margin-right: 8px;
+  font-size: 8px;
 }
 
 /* TEXTO E BOTÃO */
@@ -217,8 +279,8 @@ section {
 .grid-container4 {
   display: block;
   padding: 0;
-  margin-top: 150px;
-  grid-gap: 100px;
+  margin-top: 25px;
+  grid-gap: 25px;
   text-align: center;
 }
 
@@ -226,12 +288,154 @@ section {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 25px;
 }
 
-/* BOTÕES DO CORPO */
+/* SERVIÇOS */
 
-.btn {
+.grid-container5{
+  background-color: #fff;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: left;
+  text-align: justify;
+}
+
+/* FOTOS */
+
+.item12{
+  margin-top: 25px;
+  margin-left: 5px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  width: 175px;
+  height: 120px;
+  min-width: 150px;
+  min-height: 120px;
+
+}
+
+.item13{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 5px;
+  margin-bottom: 25px;
+  width: 175px;
+  height: 120px;
+  min-width: 150px;
+  min-height: 120px;
+}
+
+/* DESCRIÇÃO */
+
+.item14{
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+.yoga{
+  margin-bottom: 15px;
+}
+
+.yoga1{
+  margin-bottom: 10px;
+}
+
+.yoga2{
+  margin-bottom: 8px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.item15{
+  margin-top: 25px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+.pilates{
+  margin-bottom: 15px;
+}
+
+.pilates1{
+  margin-bottom: 10px;
+}
+
+.pilates2{
+  margin-bottom: 8px;
+  margin-right: 15px;
+}
+
+/* FOTO */
+
+.item16{
+  margin-top: 25px;
+  margin-left: 5px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  width: 175px;
+  height: 120px;
+  min-width: 150px;
+  min-height: 120px;
+}
+
+.item17{
+  margin-top: 25px;
+  margin-right: 5px;
+  margin-bottom: 25px;
+  width: 175px;
+  height: 120px;
+  min-width: 150px;
+  min-height: 120px;
+}
+
+/* DESCRIÇÃO */
+
+.item18{
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+.fit{
+  margin-bottom: 15px;
+}
+
+.fit1{
+  margin-bottom: 10px;
+}
+
+.fit2{
+  margin-bottom: 8px;
+}
+
+.item19{
+  margin-top: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
+.ps{
+  margin-bottom: 15px;
+}
+
+.ps1{
+  margin-bottom: 10px;
+}
+
+.ps2{
+  margin-bottom: 8px;
+}
+
+/* Botão contratar */
+
+.btn-contratar {
   text-align: center;
   box-sizing: border-box;
   background-color: transparent;
@@ -239,7 +443,7 @@ section {
   border-radius: 0.6em;
   color: #e74c3c;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 400;
   line-height: 1;
   margin: 2px;
@@ -251,13 +455,56 @@ section {
   font-weight: 700;
 }
 
-.btn:hover {
+.btn-contratar:hover {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  outline: 0;
+}
+
+.btn-contratar {
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-position: center;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+
+.btn-contratar {
+  background-position: center;
+}
+
+
+
+/* BOTÕES DO CORPO */
+
+.btn-corpo {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 2px;
+  margin-left: 15px;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.btn-corpo:hover {
   background-color: #fff;
   color: #000000;
   outline: 0;
 }
 
-.btn {
+.btn-corpo {
   border-color: #fff;
   color: #fff;
   background-position: center;
@@ -265,79 +512,79 @@ section {
   transition: background 300ms ease-in-out;
 }
 
-.btn {
+.btn-corpo {
   background-position: center;
 }
 
 /* LETRAS DO SITE */
 
 h1 {
-  font-size: 72px;
+  font-size: 30px;
   text-align: center;
 }
 
 h2 {
-  font-size: 40px;
-  padding: 10px;
+  font-size: 20px;
+  padding: 0;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 15px;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 9px;
 }
 
 h6 {
-  font-size: 12px;
+  font-size: 8px;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
 }
 
 p {
-  padding: 5px;
-  font-size: 15px;
+  padding: 0;
+  font-size: 10px;
 }
 
 /*FOOTER*/
 .face{
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
 
 }
 
 .twitter{
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .whatsapp{
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .instagram{
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 footer {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .footer{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 

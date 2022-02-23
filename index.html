@@ -1,110 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto 01</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./javascript/script.js">
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./javascript/script.js" />
+  </head>
 
-<body>
-     <header class="header">
-        <div class="grid-container1">
-            <div class="item1"> 
-                <h3>Rafael Sasaki</h3>   
-                <p>Melhore o rendimento dos seus treinos</p>
-            </div>
-            <div class="item2">
-                <a href="./index.html"><button class="btn btn-menu">Início</button></a>
-                <a href="./contato.html"><button class="btn btn-menu">Contato</button></a>
-                <a href="./servicos.html"><button class="btn btn-menu">Serviços</button></a>
-                <a href="./carrinho.html"><button class="btn btn-menu">Carrinho</button></a>
-                <a href="./login.html"><button class="btn btn-menu">Login</button></a>
-            </div>
+  <body>
+    <header class="nav">
+      <div class="grid-container1">
+        <div class="item1">
+          <h3>Rafael Sasaki</h3>
+          <p>Melhore o rendimento dos seus treinos</p>
         </div>
+        <div class="item2">
+          <a href="#personal"><button class="btn btn-menu">Início</button></a>
+          <a href="#sobre"><button class="btn btn-menu">Sobre</button></a>
+          <a href="#trabalho"><button class="btn btn-menu">Meu trabalho</button></a>
+          <a href="#serviços"><button class="btn btn-menu">Serviços</button></a>
+          <a href="https://wa.me/044988251854" target="_blank"><button class="btn btn-menu">Contato</button></a>
+          <a href="./carrinho.html"><img class="cart" border="0" src="./images/cart.jpeg"/></a>
+          <a href="./login.html"><img class="login" border="0" src="./images/login.png"/></a>
+        </div>
+      </div>
     </header>
 
-    <section>
-   <div class="container">
-       <img src="./images/foto4.jpeg" alt="">
-       </div>
-    <div class="personal">
-    <h1>Personal Trainer</h1>
-    <h1>Rafael Sasaki</h1>
-    <p class="trainer1">Como um instrutor qualificado e certificado, tenho ajudado os moradores de Maringá a conquistar um corpo </p>
-        <p class="trainer2">saudável. Se quiser perder alguns quilos ou ganhar músculos, entre em contato comigo e comece hoje mesmo!</p>
-        <a href="./contato.html"><button class="btn">Contato</button></a>
-    </div>
+    <section class="imagem" id="imagem">
+      <div class="container">
+        <img src="./images/foto4.jpeg" id="container"/>
+      </div>
+      </section>
+
+      <section class="personal" id="personal">
+        <div class="personal">
+        <h1>Personal Trainer</h1>
+        <h1>Rafael Sasaki</h1>
+        <p class="trainer1">
+          Como um instrutor qualificado e certificado, tenho ajudado os
+          moradores de Maringá a conquistar um corpo</p>
+        <p class="trainer2">
+          saudável. Se quiser perder alguns quilos ou ganhar músculos, entre em
+          contato comigo e comece hoje mesmo!
+        </p>
+        <a href="https://wa.me/044988251854" target="_blank"><button class="btn btn-corpo">Contato</button></a>
+      </div>
     </section>
 
-  <section sobre>
-    <div class="grid-container2">
+    <section class="sobre" id="sobre">
+      <div class="grid-container2">
         <div class="item3">
           <h2 class="sobre-mim">Sobre mim</h2>
-      <h5>Impactando de forma positiva</h5>
-      <p class="text">Acredito que um estilo de vida saudável começa ao manter um corpo forte e em forma. Meu objetivo é ajudar você a identificar seu caminho fitness, criar uma série de exercícios que atendam às suas necessidades e orientar em todos os treinos. Minha abordagem holística para uma vida saudável e fitness fará com que você se sinta bem e veja resultados em pouco tempo. Entre em contato hoje e vamos começar a treinar juntos!</p>
-      <a href="./servicos.html"><button class="btn">Comece já</button></a>
-    </div>
-
-      <div class="grid-item4"><img src="./images/foto5.jpg" alt="homem se alongando"></div>
+          <h5 class="mim">Impactando de forma positiva</h5>
+          <p class="text">
+            Acredito que um estilo de vida saudável começa ao manter um corpo
+            forte e em forma. Meu objetivo é ajudar você a identificar seu
+            caminho fitness, criar uma série de exercícios que atendam às suas
+            necessidades e orientar em todos os treinos. Minha abordagem
+            holística para uma vida saudável e fitness fará com que você se
+            sinta bem e veja resultados em pouco tempo. Entre em contato hoje e
+            vamos começar a treinar juntos!
+          </p>
+          <a href="#serviços"><button class="btn btn-corpo">Comece já</button></a>
+        </div>
+        <div class="item4">
+          <img class="item4" src="./images/foto5.jpg" alt="homem se alongando" />
+        </div>
       </div>
+    </section>
+
+    <section class="trabalho" id="trabalho">
+      <div class="trabalho">
+        <h2>Meu trabalho</h2>
+        <h5>O caminho mais rápido para boa forma</h5>
+      </div>
+      <div class="grid-container3">
+        <div class="item5">
+          <img class="item5" src="./images/foto6.jpg" alt="pernas na esteira" />
+        </div>
+        <div class="item6">
+          <img class="item6" src="./images/foto7.jpg" alt="mulher levantando peso" />
+        </div>
+        <div class="item7">
+          <img class="item7" src="./images/foto8.jpg" alt="mulher sentada fazendo alongamento"/>
+        </div>
+        <div class="item8">
+          <h3 class="titulo">Exercícios aeróbicos</h3>
+          <h5 class="sub-titulo">Força e resistência</h5>
+          <p>
+            Esta é uma forte tendência no mundo fitness. Se o seu objetivo for
+            perder peso ou tonificar os músculos, meu programa poderá cuidar de
+            sua saúde. Você se sentirá incrível ao notar rapidamente uma
+            melhoria no seu desempenho.
+          </p>
+        </div>
+        <div class="item9">
+          <h3 class="titulo">Desenvolvimento de músculos</h3>
+          <h5 class="sub-titulo">Melhore seu corpo e sua mente</h5>
+          <p>
+            Uma vida saudável e fitness não significa apenas um corpo em dia,
+            mas também uma mente equilibrada. Trabalho para proporcionar esse
+            equilíbrio entre corpo e mente. O que você está esperando? Agende um
+            horário comigo hoje mesmo!
+          </p>
+        </div>
+        <div class="item10">
+          <h3 class="titulo">Treino de flexibilidade</h3>
+          <h5 class="sub-titulo">Sua versão mais saudável</h5>
+          <p>
+            O programa exclusivo que desenvolvi ajudará você a queimar calorias,
+            aumentar o metabolismo e melhorar sua saúde em geral. Com uma
+            combinação de exercícios estratégicos e dieta saudável, você
+            conquistará sua melhor forma.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section texto>
+      <div class="container4">
+        <div class="item11">
+          <p>
+            Mudar a sua vida é mais fácil do que imagina. Entre em contato e
+            vamos começar!
+          </p>
+          <a href="https://wa.me/044988251854" target="_blank"><button class="btn btn-corpo">Entre em contato</button></a>
+        </div>
+      </div>
+    </section>
+    <section class="serviços" id="serviços">
+    <div class="grid-container5">
+      <div class="item12">
+        <img class="item12"  src="./images/foto91.jpg" width="620" height="414" alt="" />
+      </div>
+      <div class="item13">
+        <img class="item13" src="./images/foto10.jpg" width="620" height="414" alt="" />
+      </div>
+      <div class="item14">
+        <h3 class="yoga">Yoga</h3>
+        <p class="yoga1">
+          O Yoga é uma prática que tem como objetivo trabalhar o corpo e a mente
+          de forma interligada, com exercícios que auxiliam para o controle do
+          estresse, ansiedade, dores no corpo e na coluna, além de melhorar o
+          equilíbrio e promover a sensação de bem estar e a disposição.
+        </p>
+        <h5 class="yoga2">R$80,00 a sessão de 1 hora</h5>
+        <a href="./carrinho.html"><button class="btn btn-contratar">Contratar</button></a>
+      </div>
+      <div class="item15">
+        <h3 class="pilates">Pilates</h3>
+        <p class="pilates1">
+          Pilates é um método de exercícios desenvolvido por Joseph Pilates na
+          década de 1920 que visa trabalhar a conexão entre mente e corpo, como
+          uma unidade, de modo a melhorar a consciência corporal e dessa forma
+          promover outros benefícios. A maioria dos exercícios são executados
+          com a pessoa deitada.
+        </p>
+        <h5 class="pilates2">R$62,40 a sessão de 1 hora</h5>
+        <a href="./carrinho.html"><button class="btn btn-contratar">Contratar</button></a>
+      </div>
+      <div class="item16">
+        <img class="item16" src="./images/foto11.jpg" width="620" height="414" alt="" />
+      </div>
+      <div class="item17">
+        <img class="item17" src="./images/foto7.jpg" width="620" height="414" alt="" />
+      </div>
+      <div class="item18">
+        <h3 class="fit">Fit Dance</h3>
+        <p class="fit1">
+          O FitDance é uma atividade aeróbica, que estimula diversos músculos e
+          acelera o metabolismo. Com isso, além de gastar calorias durante a
+          aula, o seu corpo continua “funcionando” e gastando calorias depois.
+          Ou seja: esta aula pode ser uma forte aliada no processo de
+          emagrecimento.
+        </p>
+        <h5 class="fit2">R$41,20 a sessão de 1 hora</h5>
+        <a href="./carrinho.html"><button class="btn btn-contratar">Contratar</button></a
+        >
+      </div>
+      <div class="item19">
+        <h3 class="ps">Personal Trainer</h3>
+        <p class="ps1">
+          Profissional capacitado para diagnosticar as necessidades de cada
+          indivíduo e planejar um treino personalizado e que venha suprir as
+          expectativas, sempre levando em conta, cada vez mais, a
+          individualidade biológica para atender as adaptações dos exercícios
+          para cada pessoa.
+        </p>
+        <h5 class="ps2">R$150,00 a sessão de 1 hora</h5>
+        <a href="./carrinho.html"><button class="btn btn-contratar">Contratar</button></a>
+      </div>
+    </div>
   </section>
 
-  <section trabalho>
-      <div class="trabalho">
-      <h2>Meu trabalho</h2>
+    <footer>
+      <h3 class="footer">Rafael Sasaki</h3>
+      <p class="footer1">info@rafaelsasaki.com</p>
+      <p class="footer1">Tel:(44) 9 9148-4320</p>
+      <p class="footer1">Av. Mauá, 1308 - Maringá/PR</p>
+      <a href="https://www.facebook.com/yumi.kawano.589" target="_blank"><img class="face" border="0" src="./images/facebook.png"/></a>
+      <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D"target="_blank"><img class="twitter" border="0" src="./images/twitter.png"/></a>
+      <a href=" https://wa.me/044988251854" target="_blank"><img class="whatsapp" border="0" src="./images/whatsapp.png"/></a>
+      <a href="https://www.instagram.com/yumi.kawanod/" target="_blank"><img class="instagram" border="0" src="./images/instagram.png"/></a>
+      <p class="footer2">©2022 por Rafael Sasaki.</p>
+    </footer>
 
-      <h5>O caminho mais rápido para boa forma</h5></div>
+    <script type="text/javascript" src="./javascript/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./javascript/app.js"></script>
 
-      <div class="grid-container3">
-      <div class="grid-item5">
-        <img src="./images/foto6.jpg" alt="pernas na esteira">
-    </div>
-      <div class="grid-item6">
-        <img src="./images/foto7.jpg" alt="mulher levantando peso">
-    </div>
-      <div class="grid-item7">
-        <img src="./images/foto8.jpg" alt="mulher sentada fazendo alongamento">
-    </div>
-      <div class="grid-item8">
-          <h3 class="titulo">Exercícios aeróbicos</h3>
-      <h5 class="sub-titulo">Força e resistência</h5>
-      <p>Esta é uma forte tendência no mundo fitness. Se o seu objetivo for perder peso ou tonificar os músculos, meu programa poderá cuidar de sua saúde. Você se sentirá incrível ao notar rapidamente uma melhoria no seu desempenho.</p>
-    </div>
-
-      <div class="grid-item9">
-        <h3 class="titulo">Desenvolvimento de músculos</h3>
-      <h5 class="sub-titulo">Melhore seu corpo e sua mente</h5>
-      <p>Uma vida saudável e fitness não significa apenas um corpo em dia, mas também uma mente equilibrada. Trabalho para proporcionar esse equilíbrio entre corpo e mente. O que você está esperando? Agende um horário comigo hoje mesmo!</p></div>      
-      <div class="grid-item10">
-        <h3 class="titulo">Treino de flexibilidade</h3>
-      <h5 class="sub-titulo">Sua versão mais saudável</h5>
-      <p>O programa exclusivo que desenvolvi ajudará você a queimar calorias, aumentar o metabolismo e melhorar sua saúde em geral. Com uma combinação de exercícios estratégicos e dieta saudável, você conquistará sua melhor forma.</p></div>
-</div>
- </section>
-
- <section texto>
- <div class="container4">
-    <div class="item11">
-      <p>Mudar a sua vida é mais fácil do que imagina. Entre em contato e vamos começar!</p>
-      <a href="./contato.html"><button class="btn">Entre em contato</button></a>
-    </div>
-</div>
-</section>
-
-<footer>
-  <h3 class="footer">Rafael Sasaki</h3>
-  <p class="footer1">info@rafaelsasaki.com</p>
-  <p class="footer1">Tel:(44) 9 9148-4320</p>
-  <p class="footer1">Av. Mauá, 1308 - Maringá/PR</p>
-  <a href="https://www.facebook.com/yumi.kawano.589" target="_blank"><img class="face" border="0" src="./images/facebook.png" /></a>
-  <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D" target="_blank"><img class="twitter" border="0" src="./images/twitter.png" /></a>
-  <a href=" https://wa.me/044988251854" target="_blank"><img class="whatsapp" border="0" src="./images/whatsapp.png" /></a>
-  <a href="https://www.instagram.com/yumi.kawanod/" target="_blank"><img class="instagram" border="0" src="./images/instagram.png" /></a>
-  <p class="footer2">©2022 por Rafael Sasaki.</p>
-</footer>
-</body>
+  </body>
 </html>
