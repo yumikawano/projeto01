@@ -36,6 +36,16 @@ grid-template-columns: auto auto;
 text-align: left;
 }
 
+@media (min-width: 800px){
+  .grid-container1{
+    display: grid;
+    padding: 50px;
+    grid-gap: 150px;
+    grid-template-columns: auto auto;
+    text-align: left;
+  }
+}
+
 /* NOME DO SITE */
 
 .item1 {
