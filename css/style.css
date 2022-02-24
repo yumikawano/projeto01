@@ -59,10 +59,12 @@ text-align: left;
 
 @media (min-width:800px){
   .item1{
+    padding: 0;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 20px;
     margin-bottom: 20px; 
+    border: none;
   } 
 }
 
@@ -79,10 +81,12 @@ text-align: left;
 
 @media (min-width:800px){
   .item2{
+    padding: 0;
     margin-left: 150px;
     margin-right: 50px;
     margin-bottom: 20px;
     margin-top: 20px;
+    border: none;
   }
 }
 
@@ -115,7 +119,7 @@ text-align: left;
 }
 
 @media (min-width: 800px){
- .btn-menu{
+ btn .btn-menu{
   text-align: center;
   box-sizing: border-box;
   background-color: transparent;
