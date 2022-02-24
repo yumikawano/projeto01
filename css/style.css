@@ -386,8 +386,10 @@ img.item7 {
 
 @media (min-width:800px){
   img.item8{
+    grid-area: auto;
     margin-left: 50px;
     margin-right: 25px;
+    text-align: justify;
   } 
  }
 
@@ -400,8 +402,10 @@ img.item7 {
 
 @media (min-width:800px){
   img.item9{
+    grid-area: auto;
     margin-left: 0px;
     margin-right: 25px;
+    text-align: justify;
   } 
  }
 
@@ -414,8 +418,10 @@ img.item7 {
 
 @media (min-width:800px){
   img.item10{
+    grid-area: auto;
     margin-left: 0px;
     margin-right: 50px;
+    text-align: justify;
   } 
  }
 
