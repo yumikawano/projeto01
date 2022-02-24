@@ -277,14 +277,14 @@ text-align: left;
 
 /* IMAGEM */
 
-img.item4 {
+.item4 {
   grid-area: auto;
   width: 230px;
   height: 300px;
 }
 
 @media (min-width:800px){
- img .item4{
+ .item4{
    grid-area: auto;
    margin-right: 50px;
    width: 630px ;
