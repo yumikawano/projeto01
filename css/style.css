@@ -631,6 +631,7 @@ img.item7 {
   .item15{
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 0;
     margin-right: 50px;
   }
 }
@@ -666,6 +667,7 @@ img.item7 {
 @media (min-width:800px){
   .pilates2{
     margin-bottom: 10px;
+    margin-left: 0;
     margin-right: 50px;
   }
 }
@@ -759,6 +761,8 @@ img.item7 {
 
 @media (min-width:800px){
   .fit2{
+    margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 15px;
   }
 }
@@ -774,7 +778,7 @@ img.item7 {
   .item19{
     margin-top: 50px;
     margin-right: 50px;
-    margin-left: 50px;
+    margin-left: 0;
     margin-bottom: 50px;
   }
 }
@@ -805,6 +809,8 @@ img.item7 {
 
 @media (min-width:800px){
   .ps2{
+    margin-left: 0;
+    margin-right: 50px;
     margin-bottom: 15px;
   }
 }
