@@ -270,6 +270,7 @@ text-align: left;
 @media (min-width:800px){
  .text{
    margin-top: 20px;
+   margin-left: 25px;
    margin-bottom: 25px;
    margin-right: 25px;
  } 
