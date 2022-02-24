@@ -198,6 +198,7 @@ text-align: left;
 
 @media (min-width: 800px){
  .container img{
+   display: flex;
    margin-left: 0;
    margin-right: 0;
    width: 1520px;
@@ -219,9 +220,13 @@ text-align: left;
 
 @media (min-width:800px){
  section.personal{
+   padding: 0;
    margin-top: 50px;
    margin-bottom: 50px;
+   text-align: center;
    font-size: 72px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
  } 
 }
 
