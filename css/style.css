@@ -542,8 +542,8 @@ img.item7 {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
-    max-width: 300px;
-    max-height: 200px;
+    width: 640px;
+    height: 320px;
   }
 }
 
@@ -562,8 +562,8 @@ img.item7 {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
-    max-width: 300px;
-    max-height: 200px;
+    width: 640px;
+    height: 320px;
   }
 }
 
