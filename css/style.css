@@ -257,6 +257,15 @@ text-align: left;
   justify-content: center;
 }
 
+@media (min-width: 800px){
+  .item3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+  }
+}
+
 .sobre-mim{
   margin-bottom: 15px;
   margin-left: 15px;
