@@ -385,7 +385,7 @@ img.item7 {
 }
 
 @media (min-width:800px){
-  img.item8{
+  .item8{
     grid-area: auto;
     margin-left: 50px;
     margin-right: 25px;
@@ -401,7 +401,7 @@ img.item7 {
 }
 
 @media (min-width:800px){
-  img.item9{
+  .item9{
     grid-area: auto;
     margin-left: 0px;
     margin-right: 25px;
@@ -417,7 +417,7 @@ img.item7 {
 }
 
 @media (min-width:800px){
-  img.item10{
+  .item10{
     grid-area: auto;
     margin-left: 0px;
     margin-right: 50px;
