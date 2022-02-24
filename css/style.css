@@ -39,8 +39,8 @@ text-align: left;
 @media (min-width: 800px){
   .grid-container1{
     display: grid;
-    padding: 50px;
-    grid-gap: 150px;
+    padding: 20px;
+    grid-gap: 100px;
     grid-template-columns: auto auto;
     text-align: left;
   }
@@ -82,7 +82,7 @@ text-align: left;
 @media (min-width:800px){
   .item2{
     padding: 0;
-    margin-left: 150px;
+    margin-left: 300px;
     margin-right: 50px;
     margin-bottom: 20px;
     margin-top: 20px;
