@@ -334,7 +334,7 @@ img.item5 {
   grid-area: auto;
   margin-left: 25px;
   margin-right: 25px;
-  width: 200px;
+  width: 250px;
   height: 150px;
  } 
 }
@@ -352,7 +352,7 @@ img.item6 {
    grid-area: auto;
    margin-left: 0;
    margin-right: 25px;
-   width: 200px;
+   width: 250px;
    height: 150px;
   } 
  }
@@ -370,7 +370,7 @@ img.item7 {
    grid-area: auto;
    margin-left: 0;
    margin-right: 25px;
-   width: 200px;
+   width: 250px;
    height: 150px;
   } 
  }
