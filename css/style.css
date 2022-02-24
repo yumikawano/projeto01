@@ -559,7 +559,7 @@ img.item7 {
 @media (min-width:800px){
   .item13{
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 0;
     margin-right: 50px;
     margin-bottom: 50px;
     width: 640px;
@@ -705,7 +705,7 @@ img.item7 {
 @media (min-width:800px){
   .item17{
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 0;
     margin-right: 50px;
     margin-bottom: 50px;
     width: 640px;
