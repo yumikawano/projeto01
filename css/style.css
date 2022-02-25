@@ -119,7 +119,7 @@ text-align: left;
 }
 
 @media (min-width: 800px){
-.btn-menu{
+  btn {
   text-align: center;
   box-sizing: border-box;
   background-color: transparent;
