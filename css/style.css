@@ -36,7 +36,7 @@ grid-template-columns: auto auto;
 text-align: left;
 }
 
-@media (min-width: 800px){
+@media (min-width: 768px){
   .grid-container1{
     display: grid;
     padding: 20px;
@@ -44,6 +44,359 @@ text-align: left;
     grid-template-columns: auto auto;
     text-align: left;
   }
+
+  .item1{
+    padding: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    border: none;
+  } 
+
+  .item2{
+    padding: 0;
+    margin-left: 600px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: none;
+  }
+
+  .cart{
+    width: 50px;
+    height: 50px;
+  } 
+
+  .login{
+    width: 50px;
+    height: 50px;
+  } 
+
+  btn {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 2;
+    margin: 2px;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+
+  .container img{
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    width: 1520px;
+    height: 500px;
+  } 
+
+  section.personal{
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 72px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  } 
+
+  .item3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .sobre-mim{
+    margin-bottom: 50px;
+    margin-left: 0;
+  } 
+
+  .mim{
+    margin-left: 0;
+  } 
+ 
+  .text{
+    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 25px;
+    margin-right: 25px;
+  } 
+
+  .item4{
+    grid-area: auto;
+    margin-right: 50px;
+    width: 630px ;
+    height: 740px;
+  } 
+
+  .trabalho{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  } 
+
+  img.item5{
+    grid-area: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 460px;
+    height: 340px;
+   } 
+
+   img.item6{
+    grid-area: auto;
+    margin-left: 0;
+    margin-right: 25px;
+    width: 460px;
+    height: 340px;
+   } 
+
+   img.item7{
+    grid-area: auto;
+    margin-left: 0;
+    margin-right: 25px;
+    width: 460px;
+    height: 340px;
+   } 
+
+   .item8{
+    grid-area: auto;
+    margin-left: 50px;
+    margin-right: 25px;
+    text-align: justify;
+  } 
+
+  .item9{
+    grid-area: auto;
+    margin-left: 0px;
+    margin-right: 25px;
+    text-align: justify;
+  } 
+
+  .item10{
+    grid-area: auto;
+    margin-left: 0px;
+    margin-right: 50px;
+    text-align: justify;
+  } 
+
+  .titulo{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    text-align: left;
+  } 
+
+  .sub-titulo{
+    margin-bottom: 15px;
+    margin-right: 25px;
+    font-size: 15px;
+  }
+
+  .grid-container4{
+    display: flex;
+    padding: 0;
+    margin-top: 50px;
+    grid-gap: 150px;
+    text-align: center;
+  }
+
+  .item11{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .item12{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 640px;
+    height: 320px;
+  }
+
+  .item13{
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 640px;
+    height: 320px;
+  }
+
+  .item14{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  .yoga{
+    margin-bottom: 25px;
+  }
+
+  .yoga1{
+    margin-bottom: 20px;
+  }
+
+  .yoga2{
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .item15{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0;
+    margin-right: 50px;
+  }
+
+  .pilates{
+    margin-bottom: 25px;
+  }
+
+  .pilates1{
+    margin-bottom: 15px;
+  }
+
+  .pilates2{
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 50px;
+  }
+
+  .item16{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 640px;
+    height: 420px;
+  }
+
+  .item17{
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 640px;
+    height: 420px;
+  }
+
+  .item18{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+  }
+
+  .fit{
+    margin-bottom: 25px;
+  }
+
+  .fit1{
+    margin-bottom: 20px;
+  }
+
+  .fit2{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+  }
+
+  .item19{
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .ps{
+    margin-bottom: 25px;
+  }
+
+  .ps1{
+    margin-bottom: 20px;
+  }
+
+  .ps2{
+    margin-left: 0;
+    margin-right: 50px;
+    margin-bottom: 15px;
+  }
+
+  h1{
+    font-size: 72px;
+    text-align: center;
+  }
+
+  h2{
+    font-size: 40px;
+  }
+
+  h3{
+    font-size: 30px;
+  }
+
+  h5{
+    font-size: 18px;
+  }
+
+  h6{
+    font-size: 10px;
+  }
+
+  p{
+    font-size: 15px;
+  }
+
+  .face{
+    width: 50px;
+    height: 50px;
+  }
+
+  .twitter{
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp{
+    width: 50px;
+    height: 50px;
+  }
+
+  .instagram{
+    width: 50px;
+    height: 50px;
+  }
+
+  footer{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
 }
 
 /* NOME DO SITE */
@@ -57,17 +410,6 @@ text-align: left;
   border: none;
 }
 
-@media (min-width:800px){
-  .item1{
-    padding: 0;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px; 
-    border: none;
-  } 
-}
-
 /* BOTÕES DO SITE */
 
 .item2 {
@@ -79,17 +421,6 @@ text-align: left;
  border: none;
 }
 
-@media (min-width:800px){
-  .item2{
-    padding: 0;
-    margin-left: 600px;
-    margin-right: 50px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    border: none;
-  }
-}
-
 .cart{
   width: 20px;
   height: 20px;
@@ -98,46 +429,11 @@ text-align: left;
   margin-right: 0;
 }
 
-@media (min-width: 800px){
- .cart{
-   width: 50px;
-   height: 50px;
- } 
-}
-
 .login{
   width: 20px;
   height: 20px;
   margin-bottom: 0;
 }
-
-@media (min-width: 800px){
- .login{
-   width: 50px;
-   height: 50px;
- } 
-}
-
-@media (min-width: 800px){
-  btn {
-  text-align: center;
-  box-sizing: border-box;
-  background-color: transparent;
-  border: 2px solid #e74c3c;
-  border-radius: 0.6em;
-  color: #e74c3c;
-  cursor: pointer;
-  font-size: 20px;
-  line-height: 2;
-  margin: 2px;
-  padding: 1em 1.5em;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-}
- } 
 
 .btn-menu {
   text-align: center;
@@ -195,16 +491,6 @@ text-align: left;
   height: 250px;
 }
 
-@media (min-width: 800px){
- .container img{
-   display: flex;
-   margin-left: 0;
-   margin-right: 0;
-   width: 1520px;
-   height: 500px;
- } 
-}
-
 /* TEXTO PRINCIPAL */
 
 .personal {
@@ -215,18 +501,6 @@ text-align: left;
   font-size: 8px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-}
-
-@media (min-width:800px){
- section.personal{
-   padding: 0;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   text-align: center;
-   font-size: 72px;
-   font-family: Arial, Helvetica, sans-serif;
-   color: white;
- } 
 }
 
 .trainer1{
@@ -256,36 +530,13 @@ text-align: left;
   justify-content: center;
 }
 
-@media (min-width: 800px){
-  .item3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-}
-
 .sobre-mim{
   margin-bottom: 15px;
   margin-left: 15px;
 }
 
-@media (min-width:800px){
- .sobre-mim{
-   margin-bottom: 50px;
-   margin-left: 0;
- } 
-}
-
 .mim{
   margin-left: 15px;
-}
-
-@media (min-width:800px){
- .mim{
-   margin-left: 0;
- } 
 }
 
 .text{
@@ -293,15 +544,6 @@ text-align: left;
   margin-bottom: 10px;
   margin-left: 15px;
   margin-right: 15px;
-}
-
-@media (min-width:800px){
- .text{
-   margin-top: 20px;
-   margin-left: 0;
-   margin-bottom: 25px;
-   margin-right: 25px;
- } 
 }
 
 /* IMAGEM */
@@ -312,29 +554,12 @@ text-align: left;
   height: 300px;
 }
 
-@media (min-width:800px){
- .item4{
-   grid-area: auto;
-   margin-right: 50px;
-   width: 630px ;
-   height: 740px;
- } 
-}
-
 /*MEU TRABALHO*/
 
 .trabalho {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
-}
-
-@media (min-width:800px){
- .trabalho{
-   text-align: center;
-   margin-top: 50px;
-   margin-bottom: 50px;
- } 
 }
 
 .grid-container3 {
@@ -357,16 +582,6 @@ img.item5 {
   height: 80px;
 }
 
-@media (min-width:800px){
- img.item5{
-  grid-area: auto;
-  margin-left: 25px;
-  margin-right: 25px;
-  width: 460px;
-  height: 340px;
- } 
-}
-
 img.item6 {
   grid-area: auto;
   margin-left: 0;
@@ -375,16 +590,6 @@ img.item6 {
   height: 80px;
 }
 
-@media (min-width:800px){
-  img.item6{
-   grid-area: auto;
-   margin-left: 0;
-   margin-right: 25px;
-   width: 460px;
-   height: 340px;
-  } 
- }
-
 img.item7 {
   grid-area: auto;
   margin-left: 0;
@@ -392,16 +597,6 @@ img.item7 {
   width: 125px;
   height: 80px;
 }
-
-@media (min-width:800px){
-  img.item7{
-   grid-area: auto;
-   margin-left: 0;
-   margin-right: 25px;
-   width: 460px;
-   height: 340px;
-  } 
- }
 
 /* TEXTO DAS IMAGENS */
 
@@ -412,15 +607,6 @@ img.item7 {
   text-align: justify;
 }
 
-@media (min-width:800px){
-  .item8{
-    grid-area: auto;
-    margin-left: 50px;
-    margin-right: 25px;
-    text-align: justify;
-  } 
- }
-
 .item9 {
   grid-area: auto;
   margin-left: 0;
@@ -428,30 +614,12 @@ img.item7 {
   text-align: justify;
 }
 
-@media (min-width:800px){
-  .item9{
-    grid-area: auto;
-    margin-left: 0px;
-    margin-right: 25px;
-    text-align: justify;
-  } 
- }
-
 .item10 {
   grid-area: auto;
   margin-left: 0;
   margin-right: 0;
   text-align: justify;
 }
-
-@media (min-width:800px){
-  .item10{
-    grid-area: auto;
-    margin-left: 0px;
-    margin-right: 50px;
-    text-align: justify;
-  } 
- }
 
 .titulo{
   font-size: 10px;
@@ -461,28 +629,10 @@ img.item7 {
   text-align: left;
 }
 
-@media (min-width:800px){
-  .titulo{
-    font-size: 20px;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    margin-right: 50px;
-    text-align: left;
-  } 
- }
-
 .sub-titulo{
   margin-bottom: 6px;
   margin-right: 8px;
   font-size: 8px;
-}
-
-@media (min-width:800px){
-  .sub-titulo{
-    margin-bottom: 15px;
-    margin-right: 25px;
-    font-size: 15px;
-  }
 }
 
 /* TEXTO E BOTÃO */
@@ -495,31 +645,11 @@ img.item7 {
   text-align: center;
 }
 
-@media (min-width:800px){
-  .grid-container4{
-    display: flex;
-    padding: 0;
-    margin-top: 50px;
-    grid-gap: 150px;
-    text-align: center;
-  }
-}
-
 .item11{
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-bottom: 25px;
-}
-
-@media (min-width: 800px){
-  .item11{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
 }
 
 /* SERVIÇOS */
@@ -545,17 +675,6 @@ img.item7 {
   height: 120px;
 }
 
-@media (min-width:800px){
-  .item12{
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    width: 640px;
-    height: 320px;
-  }
-}
-
 .item13{
   margin-top: 25px;
   margin-left: 0;
@@ -564,18 +683,6 @@ img.item7 {
   width: 180px;
   height: 120px;
 }
-
-@media (min-width:800px){
-  .item13{
-    margin-top: 50px;
-    margin-left: 0;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    width: 640px;
-    height: 320px;
-  }
-}
-
 
 /* DESCRIÇÃO */
 
@@ -586,33 +693,12 @@ img.item7 {
   margin-bottom: 25px;
 }
 
-@media (min-width:800px){
-  .item14{
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-  }
-}
-
 .yoga{
   margin-bottom: 15px;
 }
 
-@media (min-width:800px){
-  .yoga{
-    margin-bottom: 25px;
-  }
-}
-
 .yoga1{
   margin-bottom: 10px;
-}
-
-@media (min-width:800px){
-  .yoga1{
-    margin-bottom: 20px;
-  }
 }
 
 .yoga2{
@@ -621,66 +707,24 @@ img.item7 {
   margin-right: 15px;
 }
 
-@media (min-width:800px){
-  .yoga2{
-    margin-bottom: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-}
-
-
 .item15{
   margin-top: 25px;
   margin-right: 15px;
   margin-bottom: 25px;
 }
 
-@media (min-width:800px){
-  .item15{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 0;
-    margin-right: 50px;
-  }
-}
-
-
 .pilates{
   margin-bottom: 15px;
 }
-
-@media (min-width:800px){
-  .pilates{
-    margin-bottom: 25px;
-  }
-}
-
 
 .pilates1{
   margin-bottom: 10px;
 }
 
-@media (min-width:800px){
-  .pilates1{
-    margin-bottom: 15px;
-  }
-}
-
-
 .pilates2{
   margin-bottom: 8px;
   margin-right: 15px;
 }
-
-@media (min-width:800px){
-  .pilates2{
-    margin-bottom: 10px;
-    margin-left: 0;
-    margin-right: 50px;
-  }
-}
-
 
 /* FOTO */
 
@@ -693,18 +737,6 @@ img.item7 {
   height: 120px;
 }
 
-@media (min-width:800px){
-  .item16{
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    width: 640px;
-    height: 420px;
-  }
-}
-
-
 .item17{
   margin-top: 25px;
   margin-right: 5px;
@@ -712,18 +744,6 @@ img.item7 {
   width: 180px;
   height: 120px;
 }
-
-@media (min-width:800px){
-  .item17{
-    margin-top: 50px;
-    margin-left: 0;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    width: 640px;
-    height: 420px;
-  }
-}
-
 
 /* DESCRIÇÃO */
 
@@ -734,46 +754,16 @@ img.item7 {
   margin-bottom: 25px;
 }
 
-@media (min-width:800px){
-  .item18{
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 50px;
-    margin-bottom: 25px;
-  }
-}
-
-
 .fit{
   margin-bottom: 15px;
-}
-
-@media (min-width:800px){
-  .fit{
-    margin-bottom: 25px;
-  }
 }
 
 .fit1{
   margin-bottom: 10px;
 }
 
-@media (min-width:800px){
-  .fit1{
-    margin-bottom: 20px;
-  }
-}
-
 .fit2{
   margin-bottom: 8px;
-}
-
-@media (min-width:800px){
-  .fit2{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 15px;
-  }
 }
 
 .item19{
@@ -783,45 +773,16 @@ img.item7 {
   margin-bottom: 25px;
 }
 
-@media (min-width:800px){
-  .item19{
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 0;
-    margin-bottom: 50px;
-  }
-}
-
 .ps{
   margin-bottom: 15px;
-}
-
-@media (min-width:800px){
-  .ps{
-    margin-bottom: 25px;
-  }
 }
 
 .ps1{
   margin-bottom: 10px;
 }
 
-@media (min-width:800px){
-  .ps1{
-    margin-bottom: 20px;
-  }
-}
-
 .ps2{
   margin-bottom: 8px;
-}
-
-@media (min-width:800px){
-  .ps2{
-    margin-left: 0;
-    margin-right: 50px;
-    margin-bottom: 15px;
-  }
 }
 
 /* Botão contratar */
@@ -888,14 +849,6 @@ img.item7 {
   font-weight: 700;
 }
 
-@media (min-width: 800px){
-  btn .btn-corpo{
-    margin-left: 50px;
-    font-size: 20px;
-    line-height: 2;
-  }
-}
-
 .btn-corpo:hover {
   background-color: #fff;
   color: #000000;
@@ -921,42 +874,17 @@ h1 {
   text-align: center;
 }
 
-@media (min-width:800px){
-  h1{
-    font-size: 72px;
-    text-align: center;
-  }
-}
-
 h2 {
   font-size: 20px;
   padding: 0;
-}
-
-@media (min-width:800px){
-  h2{
-    font-size: 40px;
-  }
 }
 
 h3 {
   font-size: 15px;
 }
 
-@media (min-width:800px){
-  h3{
-    font-size: 30px;
-  }
-}
-
 h5 {
   font-size: 9px;
-}
-
-@media (min-width:800px){
-  h5{
-    font-size: 18px;
-  }
 }
 
 h6 {
@@ -965,21 +893,9 @@ h6 {
   font-style: normal;
 }
 
-@media (min-width:800px){
-  h6{
-    font-size: 10px;
-  }
-}
-
 p {
   padding: 0;
   font-size: 10px;
-}
-
-@media (min-width:800px){
-  p{
-    font-size: 15px;
-  }
 }
 
 /*FOOTER*/
@@ -992,25 +908,11 @@ p {
 
 }
 
-@media (min-width:800px){
-  .face{
-    width: 50px;
-    height: 50px;
-  }
-}
-
 .twitter{
   width: 25px;
   height: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-@media (min-width:800px){
-  .twitter{
-    width: 50px;
-    height: 50px;
-  }
 }
 
 .whatsapp{
@@ -1020,13 +922,6 @@ p {
   margin-bottom: 20px;
 }
 
-@media (min-width:800px){
-  .whatsapp{
-    width: 50px;
-    height: 50px;
-  }
-}
-
 .instagram{
   width: 25px;
   height: 25px;
@@ -1034,35 +929,14 @@ p {
   margin-bottom: 20px;
 }
 
-@media (min-width:800px){
-  .instagram{
-    width: 50px;
-    height: 50px;
-  }
-}
-
 footer {
   text-align: center;
   margin-bottom: 25px;
 }
 
-@media (min-width:800px){
-  footer{
-    text-align: center;
-    margin-bottom: 50px;
-  }
-}
-
 .footer{
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-@media (min-width:800px){
-  .footer{
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
 }
 
 
