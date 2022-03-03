@@ -1,0 +1,3037 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 0;
+  background: #000000;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  background: #000000;
+  color: white;
+}
+
+.grid-container1{
+display: grid;
+grid-template-columns: auto auto;
+text-align: left;
+}
+
+/* NOME DO SITE */
+
+.item1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+/* BOTÕES DO SITE */
+
+.item2 {
+ margin-left: 0;
+ margin-right: 10px;
+ margin-top: 15px;
+ margin-bottom: 15px;
+}
+
+#btn-cart{
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.btn-menu {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+.btn-menu:hover {
+  background-color: #fff;
+  color: #000000;
+  outline: 0;
+}
+
+.btn-menu:houver {
+  background-position: 0;
+}
+
+/*LOGO*/
+
+.container img {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* TEXTO PRINCIPAL */
+
+.personal {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.trainer1{
+  margin-top: 15px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+/*SOBRE MIM*/
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: left;
+  text-align: justify;
+}
+
+/* TITULO E SUBTITULO */
+
+.item3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sobre-mim{
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.mim{
+  margin-left: 15px;
+}
+
+.text{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* IMAGEM */
+
+.item4 {
+  grid-area: auto;
+  width: 180px;
+  height: 300px;
+}
+
+/*MEU TRABALHO*/
+
+.trabalho {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: left;
+}
+
+/* IMAGENS */
+
+img.item5 {
+  grid-area: auto;
+  margin-left: 15px;
+  margin-right: 5px;
+  width: 100px;
+  height: 80px;
+}
+
+img.item6 {
+  grid-area: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 100px;
+  height: 80px;
+}
+
+img.item7 {
+  grid-area: auto;
+  margin-left: 5px;
+  margin-right: 10px;
+  width: 100px;
+  height: 80px;
+}
+
+/* TEXTO DAS IMAGENS */
+
+.item8 {
+  grid-area: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+.item9 {
+  grid-area: auto;
+  margin-left: 5px;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+.item10 {
+  grid-area: auto;
+  margin-left: 5px;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+.titulo{
+  font-size: 10px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  text-align: left;
+}
+
+.sub-titulo{
+  margin-bottom: 6px;
+  margin-right: 8px;
+  font-size: 8px;
+}
+
+/* TEXTO E BOTÃO */
+
+.grid-container4 {
+  display: flex;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.item11{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
+
+/* SERVIÇOS */
+
+.grid-container5{
+  background-color: #fff;
+  color: #000000;
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: left;
+  text-align: justify;
+}
+
+/* FOTOS */
+
+.item12{
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 0;
+  margin-bottom: 25px;
+  width: 150px;
+  height: 120px;
+}
+
+.item13{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-bottom: 25px;
+  width: 150px;
+  height: 120px;
+}
+
+/* DESCRIÇÃO */
+
+.item14{
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-bottom: 25px;
+}
+
+.yoga{
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+.yoga1{
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.yoga2{
+  margin-bottom: 19px;
+  margin-right: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.item14 .btn{
+  margin-left: 10px;
+}
+
+.item15{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
+
+.pilates{
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.pilates1{
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.pilates2{
+  margin-bottom: 8px;
+  margin-right: 10px;
+}
+
+/* FOTO */
+
+.item16{
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 0;
+  margin-bottom: 25px;
+  width: 150px;
+  height: 120px;
+}
+
+.item17{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-bottom: 25px;
+  width: 150px;
+  height: 120px;
+}
+
+/* DESCRIÇÃO */
+
+.item18{
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-bottom: 25px;
+}
+
+.fit{
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.fit1{
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.fit2{
+  margin-bottom: 8px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.item18 .btn{
+  margin-left: 10px;
+}
+
+.item19{
+  margin-top: 25px;
+  margin-right: 10px;
+  margin-left: 0;
+  margin-bottom: 25px;
+}
+
+.ps{
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.ps1{
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.ps2{
+  margin-bottom: 19px;
+  margin-right: 10px;
+}
+
+/* Botão contratar */
+
+.btn-contratar {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 10px;
+  line-height: 1;
+  margin: 2px;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.btn-contratar:hover {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  outline: 0;
+}
+
+.btn-contratar {
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-position: center;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+
+.btn-contratar {
+  background-position: center;
+}
+
+
+
+/* BOTÕES DO CORPO */
+
+.btn-corpo {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 10px;
+  line-height: 1;
+  margin: 2px;
+  margin-left: 15px;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.btn-corpo:hover {
+  background-color: #fff;
+  color: #000000;
+  outline: 0;
+}
+
+.btn-corpo {
+  border-color: #fff;
+  color: #fff;
+  background-position: center;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+
+.btn-corpo {
+  background-position: center;
+}
+
+/* LETRAS DO SITE */
+
+h1 {
+  font-size: 22px;
+  text-align: center;
+}
+
+h2, .h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+h5 {
+  font-size: 9px;
+}
+
+h6 {
+  font-size: 8px;
+}
+
+p {
+  font-size: 10px;
+}
+
+/*FOOTER*/
+
+.face{
+  width: 25px;
+  height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.twitter{
+  width: 25px;
+  height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.whatsapp{
+  width: 25px;
+  height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.instagram{
+  width: 25px;
+  height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.footer{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 375px){
+  .item1{
+    margin-left: 10px;
+    margin-right: 15px;
+  }
+
+  .item2{
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 412px){
+  .item1{
+    margin-left: 15px;
+  }
+
+  .item2{
+    margin-right: 15px;
+    margin-left: 25px;
+  }
+
+  /* TEXTO PRINCIPAL */
+
+.personal {
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.trainer1{
+  margin-top: 25px;
+}
+
+.trainer2{
+  margin-bottom: 20px;
+}
+
+/*SOBRE MIM - IMAGEM */
+
+.item4 {
+  grid-area: auto;
+  width: 200px;
+  height: 300px;
+}
+
+/*MEU TRABALHO - IMAGENS */
+
+img.item5 {
+  grid-area: auto;
+  margin-left: 10px;
+  margin-right: 8px;
+  width: 125px;
+  height: 80px;
+}
+
+img.item6 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 8px;
+  width: 125px;
+  height: 80px;
+}
+
+img.item7 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 10px;
+  width: 125px;
+  height: 80px;
+}
+
+/* TEXTO DAS IMAGENS */
+
+.item8 {
+  grid-area: auto;
+  margin-left: 10px;
+  margin-right: 8px;
+  text-align: justify;
+}
+
+.item9 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 8px;
+  text-align: justify;
+}
+
+.item10 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+/* SERVIÇOS - FOTOS */
+
+.item12{
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10x;
+  margin-bottom: 25px;
+  width: 180px;
+  height: 120px;
+}
+
+.item13{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 180px;
+  height: 120px;
+}
+
+/* DESCRIÇÃO */
+
+.item14{
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+.item14 .btn-contratar{
+  margin-top: 2px;
+}
+
+/* FOTO */
+
+.item16{
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 180px;
+  height: 120px;
+}
+
+.item17{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 180px;
+  height: 120px;
+}
+
+/* DESCRIÇÃO */
+
+.item18{
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+.item18 .btn-contratar{
+  margin-top: 2px;
+}
+
+p{
+  padding: 3px;
+}
+
+/* FOOTER */
+
+.face{
+  width: 30px;
+  height: 30px;
+}
+
+.twitter{
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp{
+  width: 30px;
+  height: 30px;
+}
+
+.instagram{
+  width: 30px;
+  height: 30px;
+}
+
+footer{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.footer{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+}
+
+@media (min-width: 540px){
+  .item1{
+    margin-left: 30px;
+  }
+
+  .item2{
+    margin-right: 30px;
+    margin-left: 70px;
+  }
+
+  .btn-menu{
+    font-size: 10px;
+  }
+
+  #btn-cart{
+    font-size: 25px;
+    margin-left: 10px;
+  }
+
+/*SOBRE MIM - IMAGEM */
+
+.item3{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.item4 {
+  grid-area: auto;
+  width: 250px;
+  height: 300px;
+}
+
+/*MEU TRABALHO - IMAGENS */
+
+img.item5 {
+  grid-area: auto;
+  margin-left: 20px;
+  margin-right: 15px;
+  width: 160px;
+  height: 120px;
+}
+
+img.item6 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 10px;
+  width: 160px;
+  height: 120px;
+}
+
+img.item7 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 20px;
+  width: 160px;
+  height: 120px;
+}
+
+/* TEXTO DAS IMAGENS */
+
+.item8 {
+  grid-area: auto;
+  margin-left: 20px;
+  margin-right: 15px;
+  text-align: justify;
+}
+
+.item9 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 15px;
+  text-align: justify;
+}
+
+.item10 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+.titulo{
+  font-size: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.sub-titulo{
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+/* SERVIÇOS - FOTOS */
+
+.item12{
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10x;
+  margin-bottom: 25px;
+  width: 240px;
+  height: 160px;
+}
+
+.item13{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 240px;
+  height: 160px;
+}
+
+/* DESCRIÇÃO */
+
+.item14{
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+.item14 .btn-contratar{
+  margin-top: 2px;
+}
+
+/* FOTO */
+
+.item16{
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 240px;
+  height: 160px;
+}
+
+.item17{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 240px;
+  height: 160px;
+}
+
+/* DESCRIÇÃO */
+
+.item18{
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+.item18 .btn-contratar{
+  margin-top: 2px;
+}
+
+p{
+  padding: 3px;
+}
+
+/* FOOTER */
+
+.face{
+  width: 30px;
+  height: 30px;
+}
+
+.twitter{
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp{
+  width: 30px;
+  height: 30px;
+}
+
+.instagram{
+  width: 30px;
+  height: 30px;
+}
+
+footer{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.footer{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+}
+
+@media (min-width: 768px){
+  .item1{
+    margin-left: 50px;
+    margin-right: 0;
+  }
+
+  .item2{
+    margin-right: 50px;
+    margin-left: 150px;
+  }
+
+  .item2 .btn-menu{
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  #btn-cart{
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+/*SOBRE MIM - IMAGEM */
+
+.item3{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.item4 {
+  grid-area: auto;
+  width: 370px;
+  height: 600px;
+}
+
+/*MEU TRABALHO - IMAGENS */
+
+img.item5 {
+  grid-area: auto;
+  margin-left: 30px;
+  margin-right: 10px;
+  width: 220px;
+  height: 180px;
+}
+
+img.item6 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 10px;
+  width: 220px;
+  height: 180px;
+}
+
+img.item7 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 15px;
+  width: 220px;
+  height: 180px;
+}
+
+/* TEXTO DAS IMAGENS */
+
+.item8 {
+  grid-area: auto;
+  margin-left: 30px;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+.item9 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+.item10 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 15px;
+  text-align: justify;
+}
+
+.titulo{
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.sub-titulo{
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* SERVIÇOS - FOTOS */
+
+.item12{
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  width: 320px;
+  height: 240px;
+}
+
+.item13{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 320px;
+  height: 240px;
+}
+
+/* DESCRIÇÃO */
+
+.item14{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+}
+
+.item15{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 30px;
+}
+
+.pilates2{
+  margin-top: 11px;
+  margin-bottom: 20px;
+}
+
+
+
+/* FOTO */
+
+.item16{
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  width: 320px;
+  height: 240px;
+}
+
+.item17{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 320px;
+  height: 240px;
+}
+
+/* DESCRIÇÃO */
+
+.item18{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+}
+
+.fit2{
+  margin-bottom: 15px
+}
+
+.item19{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 30px;
+}
+
+h1{
+  font-size: 72px;
+  text-align: center;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+h5{
+  font-size: 18px;
+}
+
+h6{
+  font-size: 10px;
+}
+
+p{
+  padding: 3px;
+  font-size: 15px;
+}
+
+/* FOOTER */
+
+.face{
+  width: 30px;
+  height: 30px;
+}
+
+.twitter{
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp{
+  width: 30px;
+  height: 30px;
+}
+
+.instagram{
+  width: 30px;
+  height: 30px;
+}
+
+footer{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.footer{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+}
+
+@media (min-width: 820px){
+  .item1{
+    margin-left: 50px;
+    margin-right: 0;
+  }
+
+  .item2{
+    margin-right: 50px;
+    margin-left: 200px;
+  }
+
+  .item2 .btn-menu{
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  #btn-cart{
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+/*SOBRE MIM - IMAGEM */
+
+.item3{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.item4 {
+  grid-area: auto;
+  width: 370px;
+  height: 600px;
+}
+
+/*MEU TRABALHO - IMAGENS */
+
+img.item5 {
+  grid-area: auto;
+  margin-left: 30px;
+  margin-right: 10px;
+  width: 240px;
+  height: 180px;
+}
+
+img.item6 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 10px;
+  width: 240px;
+  height: 180px;
+}
+
+img.item7 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 15px;
+  width: 240px;
+  height: 180px;
+}
+
+/* TEXTO DAS IMAGENS */
+
+.item8 {
+  grid-area: auto;
+  margin-left: 30px;
+  margin-right: 15px;
+  text-align: justify;
+}
+
+.item9 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 15px;
+  text-align: justify;
+}
+
+.item10 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+.titulo{
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.sub-titulo{
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* SERVIÇOS - FOTOS */
+
+.item12{
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  width: 340px;
+  height: 240px;
+}
+
+.item13{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 340px;
+  height: 240px;
+}
+
+/* DESCRIÇÃO */
+
+.item14{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 25px;
+}
+
+.yoga2{
+  margin-top: 25px;
+}
+
+.item15{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 40px;
+}
+
+/* FOTO */
+
+.item16{
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  width: 340px;
+  height: 240px;
+}
+
+.item17{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 340px;
+  height: 240px;
+}
+
+/* DESCRIÇÃO */
+
+.item18{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 25px;
+}
+
+.item19{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 40px;
+}
+
+.ps2{
+  margin-top: 30px;
+}
+
+h1{
+  font-size: 72px;
+  text-align: center;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+h5{
+  font-size: 18px;
+}
+
+h6{
+  font-size: 10px;
+}
+
+p{
+  padding: 3px;
+  font-size: 15px;
+}
+
+/* FOOTER */
+
+.face{
+  width: 30px;
+  height: 30px;
+}
+
+.twitter{
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp{
+  width: 30px;
+  height: 30px;
+}
+
+.instagram{
+  width: 30px;
+  height: 30px;
+}
+
+footer{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.footer{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+}
+
+@media (min-width: 912px){
+  .item1{
+    margin-left: 50px;
+    margin-right: 0;
+  }
+
+  .item2{
+    margin-right: 50px;
+    margin-left: 280px;
+  }
+
+  .item2 .btn-menu{
+    font-size: 12px;
+    font-weight: 700;
+    margin: 3px;
+  }
+
+  #btn-cart{
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+/*SOBRE MIM - IMAGEM */
+
+.item3{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.item4 {
+  grid-area: auto;
+  width: 440px;
+  height: 600px;
+}
+
+/*MEU TRABALHO - IMAGENS */
+
+img.item5 {
+  grid-area: auto;
+  margin-left: 30px;
+  margin-right: 10px;
+  width: 260px;
+  height: 180px;
+}
+
+img.item6 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 10px;
+  width: 260px;
+  height: 180px;
+}
+
+img.item7 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 15px;
+  width: 260px;
+  height: 180px;
+}
+
+/* TEXTO DAS IMAGENS */
+
+.item8 {
+  grid-area: auto;
+  margin-left: 30px;
+  margin-right: 15px;
+  text-align: justify;
+}
+
+.item9 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 15px;
+  text-align: justify;
+}
+
+.item10 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+.titulo{
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.sub-titulo{
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* SERVIÇOS - FOTOS */
+
+.item12{
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  width: 380px;
+  height: 240px;
+}
+
+.item13{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 380px;
+  height: 240px;
+}
+
+/* DESCRIÇÃO */
+
+.item14{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 25px;
+}
+
+.yoga2{
+  margin-top: 27px;
+}
+
+.item15{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 40px;
+}
+
+/* FOTO */
+
+.item16{
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  width: 380px;
+  height: 240px;
+}
+
+.item17{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 380px;
+  height: 240px;
+}
+
+/* DESCRIÇÃO */
+
+.item18{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 25px;
+}
+
+.fit2{
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.item19{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 40px;
+}
+
+h1{
+  font-size: 72px;
+  text-align: center;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+h5{
+  font-size: 18px;
+}
+
+h6{
+  font-size: 10px;
+}
+
+p{
+  padding: 3px;
+  font-size: 15px;
+}
+
+/* FOOTER */
+
+.face{
+  width: 30px;
+  height: 30px;
+}
+
+.twitter{
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp{
+  width: 30px;
+  height: 30px;
+}
+
+.instagram{
+  width: 30px;
+  height: 30px;
+}
+
+footer{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.footer{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+}
+
+@media (min-width: 1024px){
+  .item1{
+    margin-left: 50px;
+    margin-right: 0;
+  }
+
+  .item2{
+    margin-right: 50px;
+    margin-left: 380px;
+  }
+
+  .item2 .btn-menu{
+    font-size: 12px;
+    font-weight: 700;
+    margin: 3px;
+  }
+
+  #btn-cart{
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+/*SOBRE MIM - IMAGEM */
+
+.item3{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.item4 {
+  grid-area: auto;
+  width: 500px;
+  height: 600px;
+}
+
+/*MEU TRABALHO - IMAGENS */
+
+img.item5 {
+  grid-area: auto;
+  margin-left: 30px;
+  margin-right: 10px;
+  width: 300px;
+  height: 180px;
+}
+
+img.item6 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 10px;
+  width: 300px;
+  height: 180px;
+}
+
+img.item7 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 15px;
+  width: 300px;
+  height: 180px;
+}
+
+/* TEXTO DAS IMAGENS */
+
+.item8 {
+  grid-area: auto;
+  margin-left: 30px;
+  margin-right: 15px;
+  text-align: justify;
+}
+
+.item9 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 15px;
+  text-align: justify;
+}
+
+.item10 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+.titulo{
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.sub-titulo{
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* SERVIÇOS - FOTOS */
+
+.item12{
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  width: 440px;
+  height: 240px;
+}
+
+.item13{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 440px;
+  height: 240px;
+}
+
+/* DESCRIÇÃO */
+
+.item14{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 25px;
+}
+
+.item15{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 40px;
+}
+
+.pilates2{
+  margin-top: 28px;
+}
+
+/* FOTO */
+
+.item16{
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  width: 440px;
+  height: 240px;
+}
+
+.item17{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 440px;
+  height: 240px;
+}
+
+/* DESCRIÇÃO */
+
+.item18{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 25px;
+}
+
+.fit2{
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.item19{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 40px;
+}
+
+h1{
+  font-size: 72px;
+  text-align: center;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+h5{
+  font-size: 18px;
+}
+
+h6{
+  font-size: 10px;
+}
+
+p{
+  padding: 3px;
+  font-size: 15px;
+}
+
+/* FOOTER */
+
+.face{
+  width: 30px;
+  height: 30px;
+}
+
+.twitter{
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp{
+  width: 30px;
+  height: 30px;
+}
+
+.instagram{
+  width: 30px;
+  height: 30px;
+}
+
+footer{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.footer{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+}
+
+@media (min-width: 1280px){
+  .item1{
+    margin-left: 50px;
+    margin-right: 0;
+  }
+
+  .item2{
+    margin-right: 50px;
+    margin-left: 630px;
+  }
+
+  .item2 .btn-menu{
+    font-size: 12px;
+    font-weight: 700;
+    margin: 3px;
+  }
+
+  #btn-cart{
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  .trainer1{
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+/*SOBRE MIM - IMAGEM */
+
+.item3{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.item4 {
+  grid-area: auto;
+  width: 630px;
+  height: 700px;
+}
+
+/*MEU TRABALHO - IMAGENS */
+
+img.item5 {
+  grid-area: auto;
+  margin-left: 30px;
+  margin-right: 10px;
+  width: 380px;
+  height: 240px;
+}
+
+img.item6 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 10px;
+  width: 380px;
+  height: 240px;
+}
+
+img.item7 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 15px;
+  width: 380px;
+  height: 240px;
+}
+
+/* TEXTO DAS IMAGENS */
+
+.item8 {
+  grid-area: auto;
+  margin-left: 30px;
+  margin-right: 15px;
+  text-align: justify;
+}
+
+.item9 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 15px;
+  text-align: justify;
+}
+
+.item10 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+.titulo{
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.sub-titulo{
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* SERVIÇOS - FOTOS */
+
+.item12{
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  width: 560px;
+  height: 300px;
+}
+
+.item13{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 560px;
+  height: 300px;
+}
+
+/* DESCRIÇÃO */
+
+.item14{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 25px;
+}
+
+.item15{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 40px;
+}
+
+.pilates2{
+  margin-top: 28px;
+}
+
+/* FOTO */
+
+.item16{
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  width: 560px;
+  height: 300px;
+}
+
+.item17{
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  width: 560px;
+  height: 300px;
+}
+
+/* DESCRIÇÃO */
+
+.item18{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 25px;
+}
+
+.fit2{
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.item19{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 40px;
+}
+
+h1{
+  font-size: 72px;
+  text-align: center;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+h5{
+  font-size: 18px;
+}
+
+h6{
+  font-size: 10px;
+}
+
+p{
+  padding: 3px;
+  font-size: 15px;
+}
+
+/* FOOTER */
+
+.face{
+  width: 30px;
+  height: 30px;
+}
+
+.twitter{
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp{
+  width: 30px;
+  height: 30px;
+}
+
+.instagram{
+  width: 30px;
+  height: 30px;
+}
+
+footer{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.footer{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+}
+
+@media (min-width: 1514px){
+
+  .grid-container1{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+    width: 100%;
+  }
+
+  .item1{
+    margin-left: 100px;
+    margin-right: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  /* BOTÕES DO SITE */
+
+  .item2{
+    margin-left: 650px;
+    margin-right: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .btn-menu {
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 30px;
+  }
+ 
+ #btn-cart{
+   font-size: 50px;
+   color: #ffffff;
+   background-color: #000000;
+   margin-left: 30px;
+ }
+
+ /* TEXTO PRINCIPAL */
+
+.trainer1{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px
+}
+
+/*SOBRE MIM*/
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: left;
+  text-align: justify;
+}
+
+/* TITULO E SUBTITULO */
+
+.item3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sobre-mim{
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+
+.mim{
+  margin-left: 50px;
+}
+
+.text{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.item3 .btn{
+  margin-left: 50px;
+}
+
+/* IMAGEM */
+
+.item4 {
+  grid-area: auto;
+  width: 750px;
+  height: 900px;
+}
+
+/*MEU TRABALHO*/
+
+.trabalho {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: left;
+}
+
+/* IMAGENS */
+
+img.item5 {
+  grid-area: auto;
+  margin-left: 30px;
+  margin-right: 20px;
+  width: 450px;
+  height: 380px;
+}
+
+img.item6 {
+  grid-area: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 450px;
+  height: 380px;
+}
+
+img.item7 {
+  grid-area: auto;
+  margin-left: 20px;
+  margin-right: 25px;
+  width: 450px;
+  height: 380px;
+}
+
+/* TEXTO DAS IMAGENS */
+
+.item8 {
+  grid-area: auto;
+  margin-left: 30px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+.item9 {
+  grid-area: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+.item10 {
+  grid-area: auto;
+  margin-left: 20px;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+.titulo{
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.sub-titulo{
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+/* TEXTO E BOTÃO */
+
+.grid-container4 {
+  display: flex;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.item11{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+/* SERVIÇOS */
+
+.grid-container5{
+  background-color: #fff;
+  color: #000000;
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: left;
+  text-align: justify;
+}
+
+/* FOTOS */
+
+.item12{
+  margin-top: 50px;
+  margin-left: 35px;
+  margin-right: 25px;
+  margin-bottom: 50px;
+  width: 670px;
+  height: 480px;
+}
+
+.item13{
+  margin-top: 50px;
+  margin-left: 0;
+  margin-bottom: 50px;
+  width: 670px;
+  height: 480px;
+}
+
+/* DESCRIÇÃO */
+
+.item14{
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+
+.yoga2{
+  margin-top: 50px;
+}
+
+.item15{
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+
+/* FOTO */
+
+.item16{
+  margin-top: 50px;
+  margin-left: 35px;
+  margin-right: 25px;
+  margin-bottom: 50px;
+  width: 670px;
+  height: 480px;
+}
+
+.item17{
+  margin-top: 50px;
+  margin-left: 0;
+  margin-bottom: 50px;
+  width: 670px;
+  height: 480px;
+}
+
+/* DESCRIÇÃO */
+
+.item18{
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+
+.item19{
+  margin-top: 30px;
+  margin-right: 60px;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
+.ps2{
+  margin-top: 50px;
+}
+
+/* Botão contratar */
+
+.btn-contratar {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  margin: 2px;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.btn-contratar:hover {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  outline: 0;
+}
+
+.btn-contratar {
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-position: center;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+
+.btn-contratar {
+  background-position: center;
+}
+
+
+
+/* BOTÕES DO CORPO */
+
+.btn-corpo {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  margin: 2px;
+  margin-left: 15px;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.btn-corpo:hover {
+  background-color: #fff;
+  color: #000000;
+  outline: 0;
+}
+
+.btn-corpo {
+  border-color: #fff;
+  color: #fff;
+  background-position: center;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+
+.btn-corpo {
+  background-position: center;
+}
+
+  
+/* LETRAS DO SITE */
+
+h1 {
+  font-size: 72px;
+  text-align: center;
+}
+
+h2, .h2 {
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 28px;
+}
+
+h6 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/*FOOTER*/
+
+.face{
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+}
+
+.twitter{
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.whatsapp{
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.instagram{
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.footer{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+}
+
+@media (min-width: 1994px){
+  .grid-container1{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+    width: 100%;
+  }
+
+  .item1{
+    margin-left: 100px;
+    margin-right: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  /* BOTÕES DO SITE */
+
+  .item2{
+    margin-left: 650px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+ .item2 .btn-menu {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 30px;
+  }
+ 
+ #btn-cart{
+   font-size: 50px;
+   color: #ffffff;
+   background-color: #000000;
+   margin-left: 30px;
+ }
+
+ /* TEXTO PRINCIPAL */
+
+ .personal{
+   margin-top: 100px;
+   margin-bottom: 100px;
+ }
+
+.trainer1{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 25px;
+}
+
+/*SOBRE MIM*/
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: left;
+  text-align: justify;
+}
+
+/* TITULO E SUBTITULO */
+
+.item3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+.item3 .btn{
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+/* IMAGEM */
+
+.item4 {
+  grid-area: auto;
+  width: 960px;
+  height: 1050px;
+}
+
+/*MEU TRABALHO*/
+
+.trabalho {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: left;
+}
+
+/* IMAGENS */
+
+img.item5 {
+  grid-area: auto;
+  margin-left: 40px;
+  margin-right: 20px;
+  width: 600px;
+  height: 380px;
+}
+
+img.item6 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 20px;
+  width: 600px;
+  height: 380px;
+}
+
+img.item7 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 20px;
+  width: 600px;
+  height: 380px;
+}
+
+/* TEXTO DAS IMAGENS */
+
+.item8 {
+  grid-area: auto;
+  margin-left: 40px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+.item9 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+.item10 {
+  grid-area: auto;
+  margin-left: 0;
+  margin-right: 40px;
+  text-align: justify;
+}
+
+.titulo{
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.sub-titulo{
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+/* TEXTO E BOTÃO */
+
+.grid-container4 {
+  display: flex;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.item11{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+/* SERVIÇOS */
+
+.grid-container5{
+  background-color: #fff;
+  color: #000000;
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: left;
+  text-align: justify;
+}
+
+/* FOTOS */
+
+.item12{
+  margin-top: 50px;
+  margin-left: 35px;
+  margin-right: 25px;
+  margin-bottom: 50px;
+  width: 900px;
+  height: 580px;
+}
+
+.item13{
+  margin-top: 50px;
+  margin-left: 0;
+  margin-bottom: 50px;
+  width: 900px;
+  height: 580px;
+}
+
+/* DESCRIÇÃO */
+
+.item14{
+  margin-top: 100px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+
+.yoga{
+  margin-bottom: 50px;
+}
+
+.item15{
+  margin-top: 100px;
+  margin-left: 0;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+.pilates{
+  margin-bottom: 50px;
+}
+
+.pilates2{
+  margin-top: 50px;
+}
+
+/* FOTO */
+
+.item16{
+  margin-top: 50px;
+  margin-left: 35px;
+  margin-right: 25px;
+  margin-bottom: 50px;
+  width: 900px;
+  height: 580px;
+}
+
+.item17{
+  margin-top: 50px;
+  margin-left: 0;
+  margin-bottom: 50px;
+  width: 900px;
+  height: 580px;
+}
+
+/* DESCRIÇÃO */
+
+.item18{
+  margin-top: 100px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+
+.fit{
+  margin-bottom: 50px;
+}
+
+.fit2{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.item19{
+  margin-top: 100px;
+  margin-right: 60px;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
+.ps{
+  margin-bottom: 50px;
+}
+
+.ps2{
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+/* Botão contratar */
+
+.btn-contratar {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  margin: 2px;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.btn-contratar:hover {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  outline: 0;
+}
+
+.btn-contratar {
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-position: center;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+
+.btn-contratar {
+  background-position: center;
+}
+
+
+
+/* BOTÕES DO CORPO */
+
+.btn-corpo {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  margin: 2px;
+  margin-left: 15px;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.btn-corpo:hover {
+  background-color: #fff;
+  color: #000000;
+  outline: 0;
+}
+
+.btn-corpo {
+  border-color: #fff;
+  color: #fff;
+  background-position: center;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+
+.btn-corpo {
+  background-position: center;
+}
+
+  
+/* LETRAS DO SITE */
+
+h1 {
+  font-size: 82px;
+  text-align: center;
+}
+
+h2, .h2 {
+  font-size: 54px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 44px;
+}
+
+h5 {
+  font-size: 38px;
+}
+
+h6 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 25px;
+}
+
+/*FOOTER*/
+
+.face{
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+}
+
+.twitter{
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.whatsapp{
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.instagram{
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.footer{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+}
+
+/* CART SIDEBAR */
+
+.cart-sidebar{
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.cart-sidebar-open{
+  display: flex;
+}
+
+#btn-close-cart{
+  font-size: 30px;
+  color: #000000;
+  background: transparent;
+  align-self: flex-end;
+}
+
+#empty-cart{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+#empty-cart .fa-bag-shopping{
+  color: #000000;
+  font-size: 154px;
+  opacity: 0.2;
+  margin-bottom: 25px;
+}

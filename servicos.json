@@ -1,0 +1,113 @@
+
+{
+    "groups": [
+      {
+        "id": "43860f85-a873-4e20-b173-36d3198bb881",
+        "name": "Serviços",
+        "products": [
+          {
+            "id": "d18ab5f1-08b9-4db7-b05e-c3d53c35958c",
+            "name": "Yoga",
+            "image": "./assents/images/foto91.jpg",
+            "description": "O Yoga é uma prática que tem como objetivo trabalhar o corpo e a mente
+            de forma interligada, com exercícios que auxiliam para o controle do
+            estresse, ansiedade, dores no corpo e na coluna, além de melhorar o
+            equilíbrio e promover a sensação de bem estar e a disposição.",
+            "price": 80.00
+          },
+          {
+            "id": "4519b494-42d5-4a19-a268-ab373472665c",
+            "name": "Quatro queijos",
+            "image": "assets/img/produtos/pizza-quatro-queijos.jpg",
+            "description": "Massa artesanal, molho ao sugo, muçarela, provolone, parmesão e catupiry.",
+            "price": 49.9
+          },
+          {
+            "id": "f6b0f72a-ce7a-483b-882b-312bf30916cd",
+            "name": "A moda",
+            "image": "assets/img/produtos/pizza-a-moda.jpg",
+            "description": "Massa artesanal, molho ao sugo, muçarela, presunto, calabresa, bacon, pimentão, cebola, milho e orégano.",
+            "price": 49.9
+          },
+          {
+            "id": "91b9b877-d496-49b9-ba57-b946fd454c95",
+            "name": "Margherita",
+            "image": "assets/img/produtos/pizza-margherita.jpg",
+            "description": "Massa artesanal, molho ao sugo, muçarela, tomates e manjericão.",
+            "price": 49.9
+          }
+        ]
+      },
+      {
+        "id": "5973f204-1870-4060-9698-36bd6bd905bf",
+        "name": "Pizzas Premium",
+        "products": [
+          {
+            "id": "cd04e5b7-2554-4f56-a652-9d8a1205563d",
+            "name": "Suprema",
+            "image": "assets/img/produtos/pizza-suprema.jpg",
+            "description": "Massa artesanal, molho de tomates italiano, muçarela, peito de peru, cream cheese, geleia de frutas vermelhas, tomatinho cereja e manjericão.",
+            "price": 59.9
+          },
+          {
+            "id": "e9f7997b-e223-44b0-b0ba-cca5058251b8",
+            "name": "Frango com Palmito",
+            "image": "assets/img/produtos/pizza-frango-palmito.jpg",
+            "description": "Massa artesanal, molho de tomate, muçarela, filé de peito desfiado, palmito, molho à bolonhesa, catupiry e orégano",
+            "price": 59.9
+          },
+          {
+            "id": "5b20770d-46a2-4d60-aade-6e5c4ddeb73c",
+            "name": "4 Carnes",
+            "image": "assets/img/produtos/pizza-4-carnes.jpg",
+            "description": "Massa artesanal, molho de tomate, lombinho canadense, calabresa, mussarela, filé mignon, bacon, cebola, milho e orégano.",
+            "price": 59.9
+          },
+          {
+            "id": "1b0c89ec-30c2-4145-ac2a-5e2c1ae3ccf5",
+            "name": "Catuperoni",
+            "image": "assets/img/produtos/pizza-catuperoni.jpg",
+            "description": "Massa artesanal, molho ao sugo, muçarela, pepperoni fatiado fino, catupiry e manjericão.",
+            "price": 59.9
+          },
+          {
+            "id": "8fb33c4e-0b87-47c9-b085-87dfd4189b3a",
+            "name": "Camarão",
+            "image": "assets/img/produtos/pizza-camarao.jpg",
+            "description": "Massa artesanal, molho de tomate italiano, muçarela, molho de camarões frescos, tomate cereja e cebolinha.",
+            "price": 59.9
+          }
+        ]
+      },
+      {
+        "id": "2a386e1d-c44c-4822-8b7f-397ec7f18c26",
+        "name": "Bebidas",
+        "products": [
+          {
+            "id": "306872c9-352f-45a9-aef2-b034ef07d23d",
+            "name": "Coca-cola 2L",
+            "image": "assets/img/produtos/bebidas-coca-cola.jpg",
+            "price": 12.9
+          },
+          {
+            "id": "35ad3380-556a-48ed-892f-b12b25b52a03",
+            "name": "Fanta 2L",
+            "image": "assets/img/produtos/bebidas-fanta.jpg",
+            "price": 12.9
+          },
+          {
+            "id": "1ecccf5b-e2c2-4e51-a2f2-1b8aa3b73dd7",
+            "name": "Mate Couro 2L",
+            "image": "assets/img/produtos/bebidas-mate-couro.jpg",
+            "price": 12.9
+          },
+          {
+            "id": "c0dad15f-6bcb-4143-a804-e7ebbf267167",
+            "name": "Kuat 2L",
+            "image": "assets/img/produtos/bebidas-kuat.jpg",
+            "price": 10.9
+          }
+        ]
+      }
+    ]
+  }
