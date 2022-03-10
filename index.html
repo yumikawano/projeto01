@@ -23,7 +23,11 @@
           <a href="#personal"><button class="btn-menu">INÍCIO</button></a>
           <a href="#trabalho"><button class="btn-menu">MEU TRABALHO</button></a>
           <a href="#serviços"><button class="btn-menu">SERVIÇOS</button></a>
-          <button id="btn-cart" onclick="openSidebar()"><i class="fa-solid fa-bag-shopping"></i></button>
+          <button id="btn-cart" onclick="openSidebar()">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class=",-badge">2</span>
+            <span class="btn-cart-badge"></span>
+          </button>
         </div>
       </div>
     </header>
@@ -128,71 +132,8 @@
       </div>
     </section>
 
-    <section class="serviços" id="serviços">
-    <div class="grid-container5">
-      <div class="item12">
-        <img class="item12"  src="./assets/images/foto91.jpg" width="620" height="414" alt="" />
-      </div>
-      <div class="item13">
-        <img class="item13" src="./assets/images/foto10.jpg" width="620" height="414" alt="" />
-      </div>
-      <div class="item14">
-        <h3 class="yoga">Yoga</h3>
-        <p class="yoga1">
-          O Yoga é uma prática que tem como objetivo trabalhar o corpo e a mente
-          de forma interligada, com exercícios que auxiliam para o controle do
-          estresse, ansiedade, dores no corpo e na coluna, além de melhorar o
-          equilíbrio e promover a sensação de bem estar e a disposição.
-        </p>
-        <h5 class="yoga2">R$80,00 a sessão de 1 hora</h5>
-        <a href="./carrinho.html"><button class="btn btn-contratar">Contratar</button></a>
-      </div>
-      <div class="item15">
-        <h3 class="pilates">Pilates</h3>
-        <p class="pilates1">
-          Pilates é um método de exercícios desenvolvido por Joseph Pilates na
-          década de 1920 que visa trabalhar a conexão entre mente e corpo, como
-          uma unidade, de modo a melhorar a consciência corporal e dessa forma
-          promover outros benefícios. A maioria dos exercícios são executados
-          com a pessoa deitada.
-        </p>
-        <h5 class="pilates2">R$62,40 a sessão de 1 hora</h5>
-        <a href="./carrinho.html"><button class="btn btn-contratar">Contratar</button></a>
-      </div>
-      <div class="item16">
-        <img class="item16" src="./assets/images/foto11.jpg" width="620" height="414" alt="" />
-      </div>
-      <div class="item17">
-        <img class="item17" src="./assets/images/foto7.jpg" width="620" height="414" alt="" />
-      </div>
-      <div class="item18">
-        <h3 class="fit">Fit Dance</h3>
-        <p class="fit1">
-          O FitDance é uma atividade aeróbica, que estimula diversos músculos e
-          acelera o metabolismo. Com isso, além de gastar calorias durante a
-          aula, o seu corpo continua “funcionando” e gastando calorias depois.
-          Ou seja: esta aula pode ser uma forte aliada no processo de
-          emagrecimento.
-        </p>
-        <h5 class="fit2">R$41,20 a sessão de 1 hora</h5>
-        <a href="./carrinho.html"><button class="btn btn-contratar">Contratar</button></a
-        >
-      </div>
-      <div class="item19">
-        <h3 class="ps">Personal Trainer</h3>
-        <p class="ps1">
-          Profissional capacitado para diagnosticar as necessidades de cada
-          indivíduo e planejar um treino personalizado e que venha suprir as
-          expectativas, sempre levando em conta, cada vez mais, a
-          individualidade biológica para atender as adaptações dos exercícios
-          para cada pessoa.
-        </p>
-        <h5 class="ps2">R$150,00 a sessão de 1 hora</h5>
-        <a href="./carrinho.html"><button class="btn btn-contratar">Contratar</button></a>
-      </div>
-    </div>
-  </section>
-
+    <div class="grid-container5" id="services"></div>
+ 
     <footer>
       <h3 class="footer">Rafael Sasaki</h3>
       <p class="footer1">info@rafaelsasaki.com</p>
@@ -215,7 +156,30 @@
         <p class="h2">Sua sacola está vazia.</p>
       </div>
 
+      <div class="cart-with-serviços">
+        <p class="h2">Resumo do pedido: </p>
+        <ul>
+          <li>
+            <img src="./assets/images/foto91.jpg" alt="Yoga" width="70" height="70"/>
+            <div class="itens-cart">
+              <p class="h3">Yoga</p>
+              <p class="price">R$ 80,00</p>
+            </div>
+            <input class="form-input" type="number" />
+            <button>
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </li>
+        </ul>
+          <div class="cart-total">
+            <p>Total:</p>
+            <p>R$ 99,80</p>
+          </div>
+       </div> 
+       <button class="btn btn-outline">Adicionar mais itens</button>
+       <button class="btn btn-main">Fazer pedido</button>     
     </aside>
+
     <script src="./assets/javascript/scripts.js"></script>
 
   </body>

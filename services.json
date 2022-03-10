@@ -1,0 +1,34 @@
+{
+  "id": 0, 
+  "services": [
+    {
+      "id": "1",
+      "name": "Yoga",
+      "image": "./assets/images/foto91.jpg",
+      "description": "Yoga é uma pratica que tem como objetivo trabalhar corpo e a mente de forma interligada, com exercícios que auxiliam para o controle do estresse, ansiedade, dores no corpo e na colunna, além de melhorar o equilíbrio e promover a sensação de bem estar e a disposição.",
+      "price": 80.00
+    },
+    {
+      "id": "2",
+      "name": "Pilates",
+      "image": "./assets/images/foto10.jpg",
+      "description": "Pilates é um método de exercícios desenvolvido por Joseph Pilates na década de 1920 que visa trabalhar a conexão entre mente e corpo, como uma unidade, de modo a melhorar a consciência corporal e dessa forma promover outros benefícios. A maioria dos exercícios são executados com a pessoa deitada.",
+      "price": 62.40
+    },
+    {
+      "id": "3",
+      "name": "Fit Dance",
+      "image": "./assets/images/foto11.jpg",
+      "description": "O FitDance é uma atividade aeróbica, que estimula diversos músculos e acelera o metabolismo. Com isso, além de gastar calorias durante a aula, o seu corpo continua “funcionando” e gastando calorias depois. Ou seja: esta aula pode ser uma forte aliada no processo de emagrecimento.",
+      "price": 41.20
+    },
+    {
+      "id": "4",
+      "name": "Personal Trainer",
+      "image": "./assets/images/foto7.jpg",
+      "description": "Profissional capacitado para diagnosticar as necessidades de cada indivíduo e planejar um treino personalizado e que venha suprir as expectativas, sempre levando em conta, cada vez mais, a individualidade biológica para atender as adaptações dos exercícios para cada pessoa.",
+      "price": 150.00
+    }
+  ]
+}
+
