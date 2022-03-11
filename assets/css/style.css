@@ -48,13 +48,19 @@ text-align: left;
 }
 
 #btn-cart{
+  width: 60px;
+  height: 60px;
+  background: #FFF;
+  color: var(--main-color);
+  font-size: 30px;
+  position: relative;
+  cursor: pointer;
   font-size: 20px;
   color: #ffffff;
   background-color: #000000;
 }
 
 .btn-cart-badge {
-  border: 1px solid;
   position: absolute;
   bottom: 5px;
   right: 5px;
@@ -269,6 +275,33 @@ img.item7 {
   text-align: justify;
 }
 
+.services{
+  margin-bottom: 25px;
+}
+
+.name{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.description{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.price{
+  margin-bottom: 19px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btn-contratar{
+  margin-left: 10px;
+}
+
 /* FOTOS */
 
 .item12{
@@ -288,62 +321,6 @@ img.item7 {
   height: 120px;
 }
 
-/* DESCRIÇÃO */
-
-.item14{
-  margin-top: 25px;
-  margin-left: 10px;
-  margin-right: 5px;
-  margin-bottom: 25px;
-}
-
-.yoga{
-  margin-left: 10px;
-  margin-right: 5px;
-  margin-bottom: 15px;
-}
-
-.yoga1{
-  margin-left: 10px;
-  margin-right: 5px;
-  margin-bottom: 10px;
-}
-
-.yoga2{
-  margin-bottom: 19px;
-  margin-right: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.item14 .btn{
-  margin-left: 10px;
-}
-
-.item15{
-  margin-top: 25px;
-  margin-left: 0;
-  margin-right: 10px;
-  margin-bottom: 25px;
-}
-
-.pilates{
-  margin-bottom: 15px;
-  margin-right: 10px;
-}
-
-.pilates1{
-  margin-bottom: 10px;
-  margin-right: 10px;
-}
-
-.pilates2{
-  margin-bottom: 8px;
-  margin-right: 10px;
-}
-
-/* FOTO */
-
 .item16{
   margin-top: 25px;
   margin-left: 10px;
@@ -359,59 +336,6 @@ img.item7 {
   margin-bottom: 25px;
   width: 150px;
   height: 120px;
-}
-
-/* DESCRIÇÃO */
-
-.item18{
-  margin-top: 25px;
-  margin-left: 10px;
-  margin-right: 5px;
-  margin-bottom: 25px;
-}
-
-.fit{
-  margin-bottom: 15px;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-
-.fit1{
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-
-.fit2{
-  margin-bottom: 8px;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-
-.item18 .btn{
-  margin-left: 10px;
-}
-
-.item19{
-  margin-top: 25px;
-  margin-right: 10px;
-  margin-left: 0;
-  margin-bottom: 25px;
-}
-
-.ps{
-  margin-bottom: 15px;
-  margin-right: 10px;
-}
-
-.ps1{
-  margin-bottom: 10px;
-  margin-right: 10px;
-}
-
-.ps2{
-  margin-bottom: 19px;
-  margin-right: 10px;
 }
 
 /* Botão contratar */
@@ -679,21 +603,6 @@ img.item7 {
   height: 120px;
 }
 
-/* DESCRIÇÃO */
-
-.item14{
-  margin-top: 25px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 25px;
-}
-
-.item14 .btn-contratar{
-  margin-top: 2px;
-}
-
-/* FOTO */
-
 .item16{
   margin-top: 25px;
   margin-left: 10px;
@@ -713,17 +622,6 @@ img.item7 {
 }
 
 /* DESCRIÇÃO */
-
-.item18{
-  margin-top: 25px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 25px;
-}
-
-.item18 .btn-contratar{
-  margin-top: 2px;
-}
 
 p{
   padding: 3px;
@@ -3136,7 +3034,7 @@ footer {
   display: flex;
 }
 
-#cart-with-serviços{
+#cart-with-services{
   overflow: auto;
  display: none;
 }

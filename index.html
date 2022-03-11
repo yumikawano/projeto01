@@ -25,7 +25,6 @@
           <a href="#serviços"><button class="btn-menu">SERVIÇOS</button></a>
           <button id="btn-cart" onclick="openSidebar()">
             <i class="fa-solid fa-bag-shopping"></i>
-            <span class=",-badge">2</span>
             <span class="btn-cart-badge"></span>
           </button>
         </div>
@@ -156,28 +155,17 @@
         <p class="h2">Sua sacola está vazia.</p>
       </div>
 
-      <div class="cart-with-serviços">
+      <div id="cart-with-services">
         <p class="h2">Resumo do pedido: </p>
         <ul>
-          <li>
-            <img src="./assets/images/foto91.jpg" alt="Yoga" width="70" height="70"/>
-            <div class="itens-cart">
-              <p class="h3">Yoga</p>
-              <p class="price">R$ 80,00</p>
-            </div>
-            <input class="form-input" type="number" />
-            <button>
-              <i class="fa-solid fa-trash-can"></i>
-            </button>
-          </li>
         </ul>
           <div class="cart-total">
             <p>Total:</p>
             <p>R$ 99,80</p>
           </div>
        </div> 
-       <button class="btn btn-outline">Adicionar mais itens</button>
-       <button class="btn btn-main">Fazer pedido</button>     
+       <button class="btn btn-outline"  id="btn-add-more">Adicionar mais itens</button>
+       <button class="btn btn-main" href="fazer-pedido.html">Fazer pedido</button>     
     </aside>
 
     <script src="./assets/javascript/scripts.js"></script>

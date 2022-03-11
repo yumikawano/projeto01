@@ -2,18 +2,17 @@ const cartSidebarEl = document.querySelector(".cart-sidebar");
 function openSidebar() {
   cartSidebarEl.classList.add("cart-sidebar-open");
 }
-
 function closeSidebar() {
   cartSidebarEl.classList.remove("cart-sidebar-open");
 }
 
 const btnCartEl = document.getElementById("btn-cart");
 btnCartEl.addEventListener("click", openSidebar);
+
 const btnCloseCartEl = document.querySelector("#btn-close-cart");
 btnCloseCartEl.addEventListener("click", closeSidebar);
 
 /* CHAMEI O JSON */
-
 const fetchServices = () => {
   const servicesRoot = document.querySelector("#services");
   const responseJson = fetch("/services.json");
@@ -32,7 +31,9 @@ const fetchServices = () => {
         });
       });
     })
-    .catch((e) => console.log(e));
+    .catch(() => {
+      servicesRoot.innerHTML = '<p class="error-alert">Falha ao buscar produtos. Por favor, tente novamente.</p>'
+    });
 };
 
 /* CRIEI O HTML */
@@ -41,19 +42,127 @@ const html = (service) => {
   const sectionEl = document.createElement("section");
   sectionEl.classList.add("services");
   sectionEl.innerHTML = `<img class="item12" src="${service.image}"/>
-    <h3 class="name" style="  margin-bottom: 8px;
-    margin-left: 15px;
-    margin-right: 15px;">${service.name}</h3>
-    <p class="description">${service.description ? `<p class="description" style="  margin-bottom: 8px;
-    margin-left: 15px;
-    margin-right: 15px;">${service.description}</p>
-    <p class="price" style="  margin-bottom: 8px;
-    margin-left: 15px;
-    margin-right: 15px;">R$ ${service.price.toLocaleString('pt-br', { minimumFractionDigits: 2 })}</p>` : ''}
-    <button class="btn btn-contratar" style="  margin-bottom: 8px;
-    margin-left: 15px;
-    margin-right: 15px;">Contratar</button>`;
+    <h3 class="name">${service.name}</h3>
+    ${service.description ? `<p class="description">${service.description}</p>`:''}
+    <p class="price">R$ ${service.price.toLocaleString('pt-br', { minimumFractionDigits: 2 })}</p>
+    <button class="btn btn-contratar" value="${service.name}">Contratar</button>`;
+
+
+    const btnAddCartEl = sectionEl.querySelector('button');
+    btnAddCartEl.addEventListener('click', () => {
+      addToCart(service)
+   
+    })
+
 
   return sectionEl;
 }
 fetchServices()
+
+const servicesCart = []
+const addToCart = newService => {
+  const servicesIndex = servicesCart.findIndex(
+    item => item.id === newService.id
+  ) 
+  if (servicesIndex === -1) {
+    servicesCart.push({
+      ...newService,
+      qty: 1
+    })
+  } else {
+    servicesCart[servicesIndex].qty++
+  }
+  handleCartUpdate();
+} 
+const removeOfCart = id => {
+  servicesCart = servicesCart.filter((service) => {
+    if (service.id === id) {
+      return false
+    }
+    return true
+  })
+  handleCartUpdate();
+  if (servicesCart.length === 0) {
+    closeSidebar();
+  }
+}
+const updateItemQty = (id, newQty) => {
+  const servicesIndex = servicesCart.findIndex((service) => {
+    if (service.id === id) {
+      return true
+    }
+    return false
+  })
+  servicesCart[servicesIndex].qty = parseInt(newQty);
+  handleCartUpdate();
+}
+const handleCartUpdate = () => {
+  const emptyCartEl = document.querySelector('#empty-cart');
+  const cartWithServicesEl = document.querySelector('#cart-with-services');
+  const cartServicesListEl = cartWithServicesEl.querySelector('ul');
+  const cartBadgeEl = document.querySelector('.btn-cart-badge');
+  console.log(servicesCart)
+  if (servicesCart.length > 0) {
+     // Calcula totais
+     var total = 0
+     var totalPrice = 0
+     servicesCart.forEach(service => {
+       total = total + service.qty
+       totalPrice = totalPrice + service.price * service.qty
+     })
+    // Atualizar a badge
+    cartBadgeEl.classList.add('btn-cart-badge-show');
+    cartBadgeEl.textContent = total
+     // Atualizo o total do carrinho
+     const cartTotalEl = document.querySelector('.cart-total p:last-child');
+     cartTotalEl.textContent = totalPrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+     // Exibir carrinho com produtos
+     cartWithServicesEl.classList.add('cart-with-services-show');
+     emptyCartEl.classList.remove('empty-cart-show');
+      // Exibir produtos do carrinho na tela
+    cartServicesListEl.innerHTML = ''
+    servicesCart.forEach((service) => {
+      const listItemEl = document.createElement('li');
+      listItemEl.innerHTML = `
+        <img src="${service.image}" alt="${service.name}" width="70" height="70" />
+        <div>
+          <p class="h3">${service.name}</p>
+          <p class="price">R$ ${service.price.toLocaleString('pt-br', { minimumFractionDigits: 2 })}</p>
+        </div>
+        <input class="form-input" type="number" value="${service.qty}" />
+        <button>
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+      `
+      const btnRemoveEl = listItemEl.querySelector('button');
+      btnRemoveEl.addEventListener('click', () => {
+        removeOfCart(service.id)
+      })
+      const inputQtyEl = listItemEl.querySelector('input');
+      inputQtyEl.addEventListener('keyup', (event) => {
+        updateItemQty(service.id, event.target.value)
+      })
+      inputQtyEl.addEventListener('keydown', (event) => {
+        if (event.key === '-' || event.key === '.' || event.key === ',') {
+          event.preventDefault()
+        }
+      })
+      inputQtyEl.addEventListener('change', (event) => {
+        updateItemQty(service.id, event.target.value)
+      })
+      cartWithServicesEl.appendChild(listItemEl);
+    })
+  } 
+  else {
+    // Esconder badge
+    cartBadgeEl.classList.remove('btn-cart-badge-show');
+    // Exibir carrinho vazio
+    emptyCartEl.classList.add('empty-cart-show');
+    cartWithServicesEl.classList.remove('cart-with-services-show');
+  }
+}
+handleCartUpdate();
+
+
+
+
