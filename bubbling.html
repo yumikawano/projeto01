@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto01</title>
+  <style>
+    .avo {
+      background: rgb(0, 0, 0);
+      padding: 50px;
+    }
+    .pai {
+      background: rgb(255, 255, 255);
+      padding: 50px;
+    }
+    .filha {
+      background: rgb(250, 0, 0);
+      padding: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="avo">
+    <div class="pai">
+      <div class="filha">
+
+      </div>
+    </div>
+  </div>
+  <script>
+    document.querySelector('.avo').addEventListener('click', () => {
+      console.log('Chamou a avo')
+    })
+    document.querySelector('.pai').addEventListener('click', (event)=> {
+      event.stopPropagation()
+      console.log('Chamou o pai')
+    })
+    document.querySelector('.filha').addEventListener('click', () => {
+      console.log('Chamou a filha')
+    })
+  </script>
+</body>
+</html>

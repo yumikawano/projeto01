@@ -1,6 +1,6 @@
 const cartSidebarEl = document.querySelector(".cart-sidebar");
 function openSidebar (event) {
-  event.stopPropagation()
+  event.stopPropagation();
   cartSidebarEl.classList.add("cart-sidebar-open");
 }
 function closeSidebar() {
@@ -54,7 +54,6 @@ const html = (service) => {
     const btnAddCartEl = sectionEl.querySelector('button');
     btnAddCartEl.addEventListener('click', () => {
       addToCart(service)
-   
     })
 
 
@@ -67,7 +66,7 @@ if (servicesRoot) {
 const servicesCart = []
 const savedServices = localStorage.getItem('servicesCart')
 if (savedServices) {
-  servicesCart = JSON.parse(savedServices)
+const servicesCart = JSON.parse(savedServices)
 }
 const addToCart = newService => {
   const servicesIndex = servicesCart.findIndex(

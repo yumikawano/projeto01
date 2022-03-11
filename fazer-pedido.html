@@ -1,49 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fazer Pedido - Nostra Pizza</title>
-  <script src="https://kit.fontawesome.com/63fc93d67b.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto 01</title>
+    <script src="https://kit.fontawesome.com/63fc93d67b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+<body class="body1">
   <header class="header">
-    <div class="container">
-      <img src="assets/img/logo-nostra-pizza.svg" alt="Logo Nostra Pizza" width="99" height="70" class="logo" />
-      <nav>
-        <a href="saiba-mais.html">Saiba mais</a>
-      </nav>
-      <button id="btn-cart">
-        <i class="fa-solid fa-bag-shopping"></i>
-        <span class="btn-cart-badge"></span>
-      </button>
+    <div class="grid-container1">
+      <div class="item1">
+        <h3 class="title">Rafael Sasaki</h3>
+        <p class="sub">Melhore o rendimento dos seus treinos</p>
+      </div>
+      <div class="item2">
+        <a href="index.html"><button class="btn-menu">INÍCIO</button></a>
+        <a href="index.html#trabalho"><button class="btn-menu">MEU TRABALHO</button></a>
+        <a href="index.html#services"><button class="btn-menu">SERVIÇOS</button></a>
+        <button id="btn-cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="btn-cart-badge"></span>
+        </button>
+      </div>
     </div>
   </header>
+
+  <main class="container">
+    <h1 class="fim">Finalizar pedido</h1>
+    <form class="form-checkout">
+      <div class="form-group">
+        <label for="input-name">Nome</label>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Digite seu nome"
+          id="input-name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="input-phone">Telefone</label>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="(99) 99999-9999"
+          id="input-phone"
+        />
+      </div>
+      <div class="form-group">
+        <label for="input-cep">CEP</label>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="99999-999"
+          id="input-cep"
+        />
+      </div>
+      <div class="form-group">
+        <label for="input-address">Endereço</label>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Rua, Avenida, etc."
+          id="input-address"
+        />
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="input-number">Número</label>
+          <input
+            type="text"
+            class="form-input"
+            id="input-number"
+          />
+        </div>
+        <div class="form-group">
+          <label for="input-complement">Complemento</label>
+          <input
+            type="text"
+            class="form-input"
+            id="input-complement"
+          />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="input-neighborhood">Bairro</label>
+          <input
+            type="text"
+            class="form-input"
+            id="input-neighborhood"
+          />
+        </div>
+        <div class="form-group">
+          <label for="input-city">Cidade</label>
+          <input
+            type="text"
+            class="form-input"
+            id="input-city"
+          />
+        </div>
+      </div>
+      <input
+        type="submit"
+        value="Calcular frete"
+        class="btn btn-main"
+      />
+    </form>
+  </main>
+
   <aside class="cart-sidebar">
     <button id="btn-close-cart">
       <i class="fa-solid fa-xmark"></i>
     </button>
+
     <div id="empty-cart">
       <i class="fa-solid fa-bag-shopping"></i>
       <p class="h2">Sua sacola está vazia.</p>
     </div>
-    <div id="cart-with-products">
-      <p class="h2">Resumo do pedido:</p>
+
+    <div id="cart-with-services">
+      <p class="h2">Resumo do pedido: </p>
       <ul>
       </ul>
-      <div class="cart-total">
-        <p class="h2">Total</p>
-        <p>R$ 99,80</p>
-      </div>
-      <a class="btn btn-outline" href="index.html">Adicionar mais itens</a>
-      <a class="btn btn-main" href="fazer-pedido.html">Fazer pedido</a>
-    </div>
+        <div class="cart-total">
+          <p>Total:</p>
+          <p>R$ 99,80</p>
+        </div>
+     </div> 
+     <a class="btn btn-outline" href="index.html#services">Adicionar mais itens</a>
+     <a class="btn btn-main" href="fazer-pedido.html">Fazer pedido</a>   
   </aside>
-  <script src="assets/js/scripts.js"></script>
+
+  <script src="assets/javascript/scripts.js"></script>
 </body>
 </html> 
