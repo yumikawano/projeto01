@@ -1,20 +1,24 @@
 const cartSidebarEl = document.querySelector(".cart-sidebar");
-function openSidebar() {
+function openSidebar (event) {
+  event.stopPropagation()
   cartSidebarEl.classList.add("cart-sidebar-open");
 }
 function closeSidebar() {
   cartSidebarEl.classList.remove("cart-sidebar-open");
 }
-
 const btnCartEl = document.getElementById("btn-cart");
 btnCartEl.addEventListener("click", openSidebar);
-
 const btnCloseCartEl = document.querySelector("#btn-close-cart");
 btnCloseCartEl.addEventListener("click", closeSidebar);
-
+document.addEventListener('click', closeSidebar)
+cartSidebarEl.addEventListener('click', (event) => {
+  event.stopPropagation();
+})
+const btnAddMore = document.querySelector('#btn-add-more')
+btnAddMore?.addEventListener('click', closeSidebar)
 /* CHAMEI O JSON */
+const servicesRoot = document.querySelector("#services");
 const fetchServices = () => {
-  const servicesRoot = document.querySelector("#services");
   const responseJson = fetch("/services.json");
   console.log(responseJson);
   responseJson
@@ -37,7 +41,6 @@ const fetchServices = () => {
 };
 
 /* CRIEI O HTML */
-
 const html = (service) => {
   const sectionEl = document.createElement("section");
   sectionEl.classList.add("services");
@@ -57,9 +60,15 @@ const html = (service) => {
 
   return sectionEl;
 }
-fetchServices()
+if (servicesRoot) {
+  fetchServices()
+}
 
 const servicesCart = []
+const savedServices = localStorage.getItem('servicesCart')
+if (savedServices) {
+  servicesCart = JSON.parse(savedServices)
+}
 const addToCart = newService => {
   const servicesIndex = servicesCart.findIndex(
     item => item.id === newService.id
@@ -87,16 +96,28 @@ const removeOfCart = id => {
   }
 }
 const updateItemQty = (id, newQty) => {
-  const servicesIndex = servicesCart.findIndex((service) => {
-    if (service.id === id) {
-      return true
-    }
-    return false
-  })
-  servicesCart[servicesIndex].qty = parseInt(newQty);
-  handleCartUpdate();
+  const newQtyNumber = parseInt(newQty)
+  if (isNaN(newQtyNumber)) {
+    return
+  }
+  if (newQtyNumber > 0) {
+    const serviceIndex = servicesCart.findIndex((service) => {
+      if (service.id === id) {
+        return true
+      }
+      return false
+    })
+    servicesCart[serviceIndex].qty = newQtyNumber
+    handleCartUpdate(false)
+  } else {
+    removeOfCart(id)
+  }
 }
-const handleCartUpdate = () => {
+
+const handleCartUpdate = (renderItens = true) => {
+  // Salva carrinho no localstorage
+  const servicesCartString = JSON.stringify(servicesCart)
+  localStorage.setItem('servicesCart', servicesCartString)
   const emptyCartEl = document.querySelector('#empty-cart');
   const cartWithServicesEl = document.querySelector('#cart-with-services');
   const cartServicesListEl = cartWithServicesEl.querySelector('ul');
@@ -120,40 +141,41 @@ const handleCartUpdate = () => {
      cartWithServicesEl.classList.add('cart-with-services-show');
      emptyCartEl.classList.remove('empty-cart-show');
       // Exibir produtos do carrinho na tela
-    cartServicesListEl.innerHTML = ''
-    servicesCart.forEach((service) => {
-      const listItemEl = document.createElement('li');
-      listItemEl.innerHTML = `
-        <img src="${service.image}" alt="${service.name}" width="70" height="70" />
-        <div>
-          <p class="h3">${service.name}</p>
-          <p class="price">R$ ${service.price.toLocaleString('pt-br', { minimumFractionDigits: 2 })}</p>
-        </div>
-        <input class="form-input" type="number" value="${service.qty}" />
-        <button>
-          <i class="fa-solid fa-trash-can"></i>
-        </button>
-      `
-      const btnRemoveEl = listItemEl.querySelector('button');
-      btnRemoveEl.addEventListener('click', () => {
-        removeOfCart(service.id)
-      })
-      const inputQtyEl = listItemEl.querySelector('input');
-      inputQtyEl.addEventListener('keyup', (event) => {
-        updateItemQty(service.id, event.target.value)
-      })
-      inputQtyEl.addEventListener('keydown', (event) => {
-        if (event.key === '-' || event.key === '.' || event.key === ',') {
-          event.preventDefault()
-        }
-      })
-      inputQtyEl.addEventListener('change', (event) => {
-        updateItemQty(service.id, event.target.value)
-      })
-      cartWithServicesEl.appendChild(listItemEl);
+      if (renderItens) {
+        cartServicesListEl.innerHTML = ''
+        servicesCart.forEach((service) => {
+          const listItemEl = document.createElement('li')
+          listItemEl.innerHTML = `
+            <img src="${service.image}" alt="${service.name}" width="70" height="70" />
+            <div>
+              <p class="h3">${service.name}</p>
+              <p class="price">R$ ${service.price.toLocaleString('pt-br', { minimumFractionDigits: 2 })}</p>
+            </div>
+            <input class="form-input" type="number" value="${service.qty}" />
+            <button>
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          `
+          const btnRemoveEl = listItemEl.querySelector('button')
+          btnRemoveEl.addEventListener('click', () => {
+            removeOfCart(service.id)
+          })
+          const inputQtyEl = listItemEl.querySelector('input')
+          inputQtyEl.addEventListener('keyup', (event) => {
+            updateItemQty(service.id, event.target.value)
+          })
+          inputQtyEl.addEventListener('keydown', (event) => {
+            if (event.key === '-' || event.key === '.' || event.key === ',') {
+              event.preventDefault()
+            }
+          })
+          inputQtyEl.addEventListener('change', (event) => {
+            updateItemQty(service.id, event.target.value)
+          })
+          cartServicesListEl.appendChild(listItemEl)
     })
   } 
-  else {
+} else {
     // Esconder badge
     cartBadgeEl.classList.remove('btn-cart-badge-show');
     // Exibir carrinho vazio
@@ -162,7 +184,10 @@ const handleCartUpdate = () => {
   }
 }
 handleCartUpdate();
-
-
-
-
+// Atualiza carrinho se outra aba
+window.addEventListener('storage', (event) => {
+  if (event.key === 'servicesCart') {
+    servicesCart = JSON.parse(event.newValue)
+    handleCartUpdate()
+  }
+})

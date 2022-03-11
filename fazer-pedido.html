@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fazer Pedido - Nostra Pizza</title>
+  <script src="https://kit.fontawesome.com/63fc93d67b.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <img src="assets/img/logo-nostra-pizza.svg" alt="Logo Nostra Pizza" width="99" height="70" class="logo" />
+      <nav>
+        <a href="saiba-mais.html">Saiba mais</a>
+      </nav>
+      <button id="btn-cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="btn-cart-badge"></span>
+      </button>
+    </div>
+  </header>
+  <aside class="cart-sidebar">
+    <button id="btn-close-cart">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div id="empty-cart">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <p class="h2">Sua sacola está vazia.</p>
+    </div>
+    <div id="cart-with-products">
+      <p class="h2">Resumo do pedido:</p>
+      <ul>
+      </ul>
+      <div class="cart-total">
+        <p class="h2">Total</p>
+        <p>R$ 99,80</p>
+      </div>
+      <a class="btn btn-outline" href="index.html">Adicionar mais itens</a>
+      <a class="btn btn-main" href="fazer-pedido.html">Fazer pedido</a>
+    </div>
+  </aside>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html> 
