@@ -63,10 +63,10 @@ if (servicesRoot) {
   fetchServices()
 }
 
-const servicesCart = []
+let servicesCart = []
 const savedServices = localStorage.getItem('servicesCart')
 if (savedServices) {
-const servicesCart = JSON.parse(savedServices)
+servicesCart = JSON.parse(savedServices)
 }
 const addToCart = newService => {
   const servicesIndex = servicesCart.findIndex(
