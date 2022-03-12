@@ -55,6 +55,8 @@ const html = (service) => {
     btnAddCartEl.addEventListener('click', () => {
       addToCart(service)
     })
+    btnAddCartEl.addEventListener('click', openSidebar);
+    
 
 
   return sectionEl;
