@@ -201,7 +201,7 @@ formCheckoutEl?.addEventListener('submit', (event) => {
   }
   let text = 'Confira o pedido abaixo:\n---------------------------------------\n\n'
   let total = 0
-  productsCart.forEach(service => {
+  servicesCart.forEach(service => {
     text += `*${service.qty}x ${service.name}* - ${service.price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}\n`
     total += service.price * service.qty
   })
