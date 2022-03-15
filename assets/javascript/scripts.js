@@ -218,7 +218,7 @@ formCheckoutEl?.addEventListener('submit', (event) => {
   text += `\n${formCheckoutEl.elements['input-neighborhood'].value}, ${formCheckoutEl.elements['input-city'].value}\n`
   text += formCheckoutEl.elements['input-cep'].value
   const subdomain = window.innerWidth > 768 ? 'web' : 'api'
-  window.open(`https://${subdomain}.whatsapp.com/send?phone=5544988251854&text=${encodeURI(text)}`, '_blank')
+  window.open(`https://${subdomain}.whatsapp.com/send?phone=554491484320&text=${encodeURI(text)}`, '_blank')
 })
 if (typeof IMask !== 'undefined') {
   const inputPhoneEl = document.querySelector('#input-phone')
