@@ -205,7 +205,6 @@ formCheckoutEl?.addEventListener('submit', (event) => {
     text += `*${service.qty}x ${service.name}* - ${service.price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}\n`
     total += service.price * service.qty
   })
-  text += '\n*Taxa de entrega:* A combinar\n'
   text += `*Total: ${total.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}*`
   text += '\n---------------------------------------\n\n'
   text += `*${formCheckoutEl.elements['input-name'].value}*\n`
