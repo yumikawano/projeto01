@@ -192,3 +192,41 @@ window.addEventListener('storage', (event) => {
     handleCartUpdate()
   }
 })
+const formCheckoutEl = document.querySelector('.form-checkout')
+formCheckoutEl?.addEventListener('submit', (event) => {
+  event.preventDefault()
+  if (servicesCart.length == 0) {
+    alert('Nenhum produto no carrinho.')
+    return
+  }
+  let text = 'Confira o pedido abaixo:\n---------------------------------------\n\n'
+  let total = 0
+  productsCart.forEach(service => {
+    text += `*${service.qty}x ${service.name}* - ${service.price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}\n`
+    total += service.price * service.qty
+  })
+  text += '\n*Taxa de entrega:* A combinar\n'
+  text += `*Total: ${total.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}*`
+  text += '\n---------------------------------------\n\n'
+  text += `*${formCheckoutEl.elements['input-name'].value}*\n`
+  text += `${formCheckoutEl.elements['input-phone'].value}\n\n`
+  text += `${formCheckoutEl.elements['input-address'].value}, ${formCheckoutEl.elements['input-number'].value}`
+  const complement = formCheckoutEl.elements['input-complement'].value
+  if (complement) {
+    text+= ` - ${complement}`
+  }
+  text += `\n${formCheckoutEl.elements['input-neighborhood'].value}, ${formCheckoutEl.elements['input-city'].value}\n`
+  text += formCheckoutEl.elements['input-cep'].value
+  const subdomain = window.innerWidth > 768 ? 'web' : 'api'
+  window.open(`https://${subdomain}.whatsapp.com/send?phone=5544988251854&text=${encodeURI(text)}`, '_blank')
+})
+if (typeof IMask !== 'undefined') {
+  const inputPhoneEl = document.querySelector('#input-phone')
+  IMask(inputPhoneEl, {
+    mask: '(00) 00000-0000'
+  })
+  const inputCepEl = document.querySelector('#input-cep')
+  IMask(inputCepEl, {
+    mask: '00000-000'
+  })
+}
